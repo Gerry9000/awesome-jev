@@ -1,0 +1,147 @@
+name: Suggest a Tool, Benchmark, or Demo
+description: Submit a new fast classifier, Jev tool, benchmark, or video teardown for curation
+title: "Submit: <repository-or-tool-name>"
+labels: ["resource-submission", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Curated Intake Protocol
+        Thank you for submitting to **Awesome Jev & Fast Classifiers**!
+        We curate additions via **Issue Submissions** so our automated pipelines and agents can:
+        1. Inspect codebase health, commit activity, and star history.
+        2. Audit reported latency, cost numbers, and benchmark values.
+        3. Extract canonical discussion threads on X and convert demo videos into optimized media assets.
+        4. Promote verified entries directly to the `dev` branch with zero CI drift.
+
+        *AI Agents submitting on behalf of teams: Review the [Agentic Submission Spec](dossiers/agent-submission-guide.md) for machine-parseable YAML schema and research link requirements.*
+
+  - type: input
+    id: repo_url
+    attributes:
+      label: Repository or Project URL
+      description: Link to the public GitHub, GitLab, or Forgejo repository.
+      placeholder: "https://github.com/username/project-name"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Technical Description (1-2 sentences)
+      description: Concise summary of what the tool does and its decision mechanism (state evaluated, typed primitive used, downstream consumer).
+      placeholder: "High-speed browser automation evaluating interactive DOM trees via choice in under 100 ms without heavy vision models."
+    validations:
+      required: true
+
+  - type: input
+    id: video_url
+    attributes:
+      label: Demo Video Link (Recommended)
+      description: Direct link to an MP4 video, Loom, X/Twitter video, asciinema replay, or YouTube explainer showing the tool running live.
+      placeholder: "https://x.com/author/status/1234567890 or https://example.com/demo.mp4"
+    validations:
+      required: false
+
+  - type: input
+    id: social_thread_url
+    attributes:
+      label: X or Social Media Discussion Thread
+      description: Canonical author launch thread, technical teardown, or community discussion on X, Hacker News, or Reddit.
+      placeholder: "https://x.com/username/status/1234567890"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Target Category
+      description: Select the ecosystem category that best matches your project.
+      options:
+        - "1. Browser, Desktop, and Mobile Automation"
+        - "2. AI Development, Code Review, and Agent Triage"
+        - "3. MCP Servers, Agent Skills, and Shell Plugins"
+        - "4. Database Filtering, Search, and Knowledge Graphs"
+        - "5. Security Guardrails, SecOps, and Content Moderation"
+        - "6. Simulation, Real-Time Gaming, and Physical Control"
+        - "7. Benchmarks and Empirical Evaluations"
+        - "8. Competing Fast Classifiers and Open Reproductions"
+        - "9. Official SDKs and Gateway Integrations"
+    validations:
+      required: true
+
+  - type: textarea
+    id: category_rationale
+    attributes:
+      label: Category Rationale
+      description: Brief explanation of why this project belongs in the selected category.
+      placeholder: "This project provides an automated MCP tool that agentic IDEs call to triage file edits before committing."
+    validations:
+      required: true
+
+  - type: input
+    id: system_one_model
+    attributes:
+      label: System 1 Model Used
+      description: Which fast non-generative classifier model is utilized?
+      placeholder: "TypeSafe Jev (or NanoJev, SemIf, Solomon-27B, GLiNER, Verdict)"
+    validations:
+      required: true
+
+  - type: input
+    id: system_two_model
+    attributes:
+      label: Paired System 2 Model (If Any)
+      description: Which generative or reasoning LLM is paired in the workflow? Enter 'None' if standalone.
+      placeholder: "None (Standalone reflex loop) or Claude 3.5 Sonnet, GPT-6 Astra, DeepSeek V4 Flash"
+    validations:
+      required: false
+
+  - type: input
+    id: metrics_economics
+    attributes:
+      label: Demonstrated Latency, Cost Breakdown & Value Gained
+      description: System 1 inference latency, classifier cost, paired LLM cost, total run spend, and value gained vs pure frontier models.
+      placeholder: "28 ms latency; $0.01 on Jev + $0.96 on GPT-6 Astra ($0.97 total vs $50+ on pure frontier models; 98% savings)"
+    validations:
+      required: false
+
+  - type: input
+    id: language_stack
+    attributes:
+      label: Primary Language and Runtime
+      description: Main programming language or framework used by the repository.
+      placeholder: "Rust, Python, TypeScript, Go"
+    validations:
+      required: true
+
+  - type: input
+    id: license_type
+    attributes:
+      label: Open-Source License
+      description: Confirms public open-source availability (e.g. MIT, Apache 2.0, MPL 2.0).
+      placeholder: "MIT"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: affiliation
+    attributes:
+      label: Submitter Affiliation
+      options:
+        - "I am the creator or maintainer of this project"
+        - "I am an independent community user / researcher"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: verifications
+    attributes:
+      label: Submission Quality Verification
+      options:
+        - label: The repository is public, active, and contains real code (no empty stubs or placeholder marketing repos).
+          required: true
+        - label: The project explicitly uses or benchmarks TypeSafe AI's Jev (or evaluates fast System One decision models).
+          required: true
+        - label: I understand that submissions are audited by maintainer pipelines before promotion to the live list.
+          required: true

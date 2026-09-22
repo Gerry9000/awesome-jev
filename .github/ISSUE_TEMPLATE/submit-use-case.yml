@@ -1,0 +1,122 @@
+name: Suggest a Production Use Case or Recipe
+description: Submit a real-world production pattern, architecture recipe, or applied case study
+title: "Use Case: <pattern-or-architecture-name>"
+labels: ["use-case-submission", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Production Use Case Submission Protocol
+        Not all breakthroughs are open-source repositories! We actively curate **reusable production patterns, architecture recipes, and battle-tested case studies** that engineers can replicate in their own applications.
+        Maintainers and evaluation agents will review your submission, verify the reported economics, extract demonstration media if available, and add the recipe to the directory.
+
+        *AI Agents submitting on behalf of teams: Review the [Agentic Submission Spec](dossiers/agent-submission-guide.md) for machine-parseable YAML schema and research link requirements.*
+
+  - type: input
+    id: use_case_title
+    attributes:
+      label: Use Case or Architecture Title
+      description: Descriptive title of the applied pattern or workflow.
+      placeholder: "Adversarial Accounts Payable & Invoice Triage"
+    validations:
+      required: true
+
+  - type: input
+    id: practitioner
+    attributes:
+      label: Practitioner, Team, or Company
+      description: Name or social handle of the engineer or organization that implemented the pattern.
+      placeholder: "@PawelHuryn on X or Acme Corp Engineering"
+    validations:
+      required: true
+
+  - type: input
+    id: discussion_url
+    attributes:
+      label: X or Community Discussion Link
+      description: Link to the canonical X (Twitter) thread, Hacker News discussion, Reddit post, or technical writeup.
+      placeholder: "https://x.com/author/status/1234567890"
+    validations:
+      required: true
+
+  - type: input
+    id: media_url
+    attributes:
+      label: Link to Demo Video, Media, or Architecture Graphic (Recommended)
+      description: Direct link to a demonstration video (MP4, Loom, X video, YouTube), animated GIF, architecture diagram, or benchmark infographic.
+      placeholder: "https://example.com/demo.mp4 or https://x.com/author/status/1234567890/video/1"
+    validations:
+      required: false
+
+  - type: textarea
+    id: bottleneck
+    attributes:
+      label: The Traditional LLM Bottleneck
+      description: What made traditional generative LLMs, heuristic regex rules, or manual review impractical (latency, token costs, rate limits, hallucinations).
+      placeholder: "Running full OCR extraction with GPT-4o cost $0.03 per invoice and took 2.4 seconds, making real-time customer uploads too slow and expensive."
+    validations:
+      required: true
+
+  - type: textarea
+    id: recipe
+    attributes:
+      label: The Fast-Classifier Recipe
+      description: How the fast classifier is wired. Specify the input state evaluated, the typed schema or question used, and the downstream action taken.
+      placeholder: "Passes raw OCR header text to Jev choice across [invoice, receipt, purchase_order, credit_memo]. Only routes documents with confidence >= 0.85 to automated extraction; lower confidence alerts human reviewers."
+    validations:
+      required: true
+
+  - type: input
+    id: system_one_model
+    attributes:
+      label: System 1 Model Used
+      description: Which fast non-generative classifier model was used?
+      placeholder: "TypeSafe Jev (or NanoJev, SemIf, Solomon-27B, GLiNER, Verdict)"
+    validations:
+      required: true
+
+  - type: input
+    id: system_two_model
+    attributes:
+      label: Paired System 2 Model (If Any)
+      description: Which generative or reasoning LLM was paired in the architecture? Enter 'None' if standalone.
+      placeholder: "None (Standalone reflex loop) or Claude 3.5 Sonnet, GPT-6 Astra, DeepSeek V4 Flash"
+    validations:
+      required: false
+
+  - type: input
+    id: metrics_economics
+    attributes:
+      label: Demonstrated Latency, Cost Breakdown & Value Gained
+      description: System 1 inference latency, classifier cost, paired LLM cost, total run spend, and value gained vs pure frontier models.
+      placeholder: "24 ms latency; $0.00004 per invoice ($0.08 total) vs $0.015 ($15.00) on GPT-4o; 99% cost reduction"
+    validations:
+      required: true
+
+  - type: textarea
+    id: code_snippet
+    attributes:
+      label: Minimal Code or Schema Snippet (Recommended)
+      description: Small copy-pasteable configuration or SDK snippet demonstrating how to replicate the question schema.
+      placeholder: |
+        ```python
+        decision = client.choice(
+            context=ocr_header_text[:1200],
+            question="What type of financial document is this?",
+            options=["invoice", "receipt", "purchase_order", "unknown"]
+        )
+        if decision.confidence < 0.85:
+            escalate_to_human_queue(doc_id)
+        ```
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: verifications
+    attributes:
+      label: Verification
+      options:
+        - label: This is a real, implemented production pattern or empirical experiment (not theoretical speculation).
+          required: true
+        - label: The discussion link is active and public.
+          required: true
