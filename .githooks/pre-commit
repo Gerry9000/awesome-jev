@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# .githooks/pre-commit
+# Strictly enforce Gerry Burde public email identity for commits in awesome-jev
+set -euo pipefail
+
+ALLOWED_EMAIL="gerry.burde@gmail.com"
+ALLOWED_NAME="Gerry Burde"
+
+ACTUAL_EMAIL="$(git config --get user.email || true)"
+if [[ "${ACTUAL_EMAIL,,}" != "$ALLOWED_EMAIL" ]]; then
+    echo "❌ COMMIT BLOCKED: This public repository strictly requires user.email='$ALLOWED_EMAIL'." >&2
+    echo "Current user.email is '${ACTUAL_EMAIL}'." >&2
+    echo "Run: git config --local user.email '$ALLOWED_EMAIL' && git config --local user.name '$ALLOWED_NAME'" >&2
+    exit 1
+fi
