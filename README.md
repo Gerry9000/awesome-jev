@@ -1,4 +1,4 @@
-# Awesome Jev & Fast Classifiers [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![TypeSafe AI](https://img.shields.io/badge/Model-TypeSafe%20Jev-00E599.svg)](https://typesafe.ai) [![Curated with Jev](https://img.shields.io/badge/Curated_with-TypeSafe_Jev-00E599.svg)](RADAR.md) [![Open Reproductions](https://img.shields.io/badge/Open%20Reproductions-Open%20Weights-blueviolet.svg)](#8-competing-fast-classifiers-and-open-reproductions) [![Curated Resources](https://img.shields.io/badge/Curated%20Resources-100%2B-blue.svg)](#the-curated-open-source-jev-ecosystem) [![Full Analysis on gerryburde.com](https://img.shields.io/badge/Full%20Report-gerryburde.com-00d2ff.svg)](https://gerryburde.com/articles/my-name-is-jev-summarizing-dozens-of-real-world-use-cases.html)
+# Awesome Jev & Fast Classifiers [![Interactive Web App](https://img.shields.io/badge/🌐_Interactive_Site-awesomejev.org-7c3aed.svg)](https://awesomejev.org) [![Jev Matcher](https://img.shields.io/badge/⚡_Jev_Matcher-Filter_by_Intent-00E599.svg)](https://awesomejev.org/#ask-jev) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![TypeSafe AI](https://img.shields.io/badge/Model-TypeSafe%20Jev-00E599.svg)](https://typesafe.ai) [![Curated with Jev](https://img.shields.io/badge/Curated_with-TypeSafe_Jev-00E599.svg)](RADAR.md) [![Open Reproductions](https://img.shields.io/badge/Open%20Reproductions-Open%20Weights-blueviolet.svg)](#8-competing-fast-classifiers-and-open-reproductions) [![Curated Resources](https://img.shields.io/badge/Curated%20Resources-100%2B-blue.svg)](#the-curated-open-source-jev-ecosystem) [![Full Analysis on gerryburde.com](https://img.shields.io/badge/Full%20Report-gerryburde.com-00d2ff.svg)](https://gerryburde.com/articles/my-name-is-jev-summarizing-dozens-of-real-world-use-cases.html)
 
 <p align="center">
   <a href="https://gerryburde.com/articles/my-name-is-jev-summarizing-dozens-of-real-world-use-cases.html" target="_blank" rel="noopener noreferrer">
@@ -9,6 +9,14 @@
 </p>
 
 <p align="center">
+  <a href="https://awesomejev.org" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/🌐_Interactive_Explorer-awesomejev.org-7c3aed?style=for-the-badge" alt="Launch Interactive Web App">
+  </a>
+  &nbsp;
+  <a href="https://awesomejev.org/#ask-jev" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/⚡_Jev_Matcher-Intent_Search-00E599?style=for-the-badge" alt="Launch Jev Intent Matcher">
+  </a>
+  &nbsp;
   <a href="README.md">
     <img src="https://img.shields.io/badge/🎬_View_Mode-Expanded_Visual_Scroll_(Current)-2ea44f?style=for-the-badge" alt="Expanded View">
   </a>
@@ -36,9 +44,9 @@ This project maintains two distinct, interconnected resources for developers and
   - **Best For:** Production architectures, battle-tested recipes, reliable SDKs, and reproducible enterprise decision pipelines.
 
 - **The Ecosystem Radar (`RADAR.md`)**:
-  - **What It Is:** An automated staging backlog tracking [over 2,800 community repositories](RADAR.md) discovered across [29 ecosystem mirrors](RADAR.md).
+  - **What It Is:** An automated staging backlog tracking [over 6,000 community repositories](RADAR.md) discovered across [29 ecosystem mirrors](RADAR.md).
   - **Why You Should Mine It:** The Radar is an excellent source to mine for hobby projects, hackathon prototypes, maturing tools, and novel ideas that have not completed formal three-prong evaluation yet. Many promising tools live here while awaiting latency verification or author documentation.
-  - **Autonomous Jev Triage:** Triaged into [9 canonical categories](RADAR.md) with empirical quality [scores from 1.0 to 4.0](RADAR.md). Look for candidates marked `🚀 Promotion Ready` to discover maturing projects closest to graduating into the curated directory.
+  - **Autonomous Jev Triage:** Triaged into [9 canonical categories](RADAR.md) using semantic classification to organize and track emerging community tools across the ecosystem.
 
 <p align="center">
 <a href="RADAR.md">
@@ -71,7 +79,7 @@ This project maintains two distinct, interconnected resources for developers and
 - [Production Use Cases and Architecture Recipes](#production-use-cases-and-architecture-recipes)
 
 > [!TIP]
-> **Expanded Visual Scroll Active:** All 39 video demonstrations, interactive animations, and benchmark replays are open below. Switch back anytime with **[📁 Compact List View &rarr;](README-COMPACT.md)**. Explore these systems in action without visiting each repo:
+> **Expanded Visual Scroll Active:** All 41 video demonstrations, interactive animations, and benchmark replays are open below. Switch back anytime with **[📁 Compact List View &rarr;](README-COMPACT.md)**. Explore these systems in action without visiting each repo:
 > - Jump to [Visual Demo Gallery: Featured Video Teardowns](#visual-demo-gallery-featured-video-teardowns)
 > - Jump to [Visual Benchmark Gallery: Jev vs. Competing Models & Frontier LLMs](#visual-benchmark-gallery-jev-vs-competing-models-frontier-llms)
 > - Jump to [Architecture and Production Visualizations](#architecture-and-production-visualizations)
@@ -79,7 +87,7 @@ This project maintains two distinct, interconnected resources for developers and
 
 ### 1. Browser, Desktop, and Mobile Automation
 
-- **[`browser-use/jev-ultrafast`](https://github.com/browser-use/jev-ultrafast)** *(Python, ⭐ 14,931)* &middot; [🐦 Thread](https://x.com/gregpr07/status/2100411066966749359) &middot; [Teardown Dossier](dossiers/browser-use-jev-ultrafast.md) -- High-speed browser automation evaluating interactive DOM trees via `choice` in under 100 ms without heavy vision models. Evaluates web forms in 2 s, operating 130x cheaper than frontier vision models.
+- **[`browser-use/jev-ultrafast`](https://github.com/browser-use/jev-ultrafast)** *(Python, ⭐ 18,275)* &middot; [🐦 Thread](https://x.com/gregpr07/status/2100411066966749359) &middot; [Teardown Dossier](dossiers/browser-use-jev-ultrafast.md) -- High-speed browser automation evaluating interactive DOM trees via `choice` in under 100 ms without heavy vision models. Evaluates web forms in 2 s, operating 130x cheaper than frontier vision models.
   <details open id="demo-browser-use-jev-ultrafast">
   <summary><img src="media/browser-use-jev-ultrafast-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Demo</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -92,15 +100,15 @@ This project maintains two distinct, interconnected resources for developers and
   <a href="dossiers/browser-use-jev-ultrafast.md"><b>&rarr; Read the complete Browser-Use UltraFast Dossier</b></a>
   </p>
   </details>
-- **[`awlevin/typesafe-computer-use`](https://github.com/awlevin/typesafe-computer-use)** *(Python, ⭐ 729)* -- macOS computer-use loop combining accessibility metadata with Jev choice primitives. Executes deterministic clicks and keystrokes in sub-50 ms cycles without generative token latency.
-- **[`droidrun/mobile-jev`](https://github.com/droidrun/mobile-jev)** *(JavaScript, ⭐ 315)* -- Android device automation via Mobilerun. Selects interface actions from accessibility nodes in real time with 60 ms dispatch latency.
-- **[`jkudish/jev-browser`](https://github.com/jkudish/jev-browser)** *(TypeScript, ⭐ 221)* -- Lightweight browser automation framework. Evaluates structured DOM candidate trees via Jev in sub-80 ms cycles.
-- **[`moritzkremb/jev-voice-browser`](https://github.com/moritzkremb/jev-voice-browser)** *(JavaScript, ⭐ 194)* -- Voice-driven web navigation. Extracts user intent from speech recognition to dispatch Playwright browser actions in 45 ms.
-- **[`kitze/unclutter`](https://github.com/kitze/unclutter)** *(TypeScript, ⭐ 160)* -- WXT-based browser extension. Evaluates web elements to conceal ad banners and popups in 18 ms client-side passes.
-- **[`realZachi/typesafe-adblock`](https://github.com/realZachi/typesafe-adblock)** *(JavaScript, ⭐ 65)* -- Chrome extension asking Jev whether each DOM element is promotional noise. Hides matches instantly with 22 ms heuristic evaluation.
-- **[`Ying-Kai-Liao/jev-browser`](https://github.com/Ying-Kai-Liao/jev-browser)** *(JavaScript, ⭐ 66)* -- Two-tier browser agent combining high-level LLM planning with Jev for atomic clicks and keystrokes on Playwright snapshots in sub-100 ms.
-- **[`chy4pro/jev-for-chrome`](https://github.com/chy4pro/jev-for-chrome)** *(TypeScript, ⭐ 14)* -- Chrome Manifest V3 browser extension porting Jev DOM action selection directly into live browser tabs in sub-50 ms.
-- **[`romaluev/jev-ego`](https://github.com/romaluev/jev-ego)** *(TypeScript, ⭐ 13)* -- Browser automation agent built on Ego Lite. Evaluates candidate DOM elements and selects actions in sub-100 ms cycles.
+- **[`awlevin/typesafe-computer-use`](https://github.com/awlevin/typesafe-computer-use)** *(Python, ⭐ 847)* -- macOS computer-use loop combining accessibility metadata with Jev choice primitives. Executes deterministic clicks and keystrokes in sub-50 ms cycles without generative token latency.
+- **[`droidrun/mobile-jev`](https://github.com/droidrun/mobile-jev)** *(JavaScript, ⭐ 357)* -- Android device automation via Mobilerun. Selects interface actions from accessibility nodes in real time with 60 ms dispatch latency.
+- **[`jkudish/jev-browser`](https://github.com/jkudish/jev-browser)** *(TypeScript, ⭐ 240)* -- Lightweight browser automation framework. Evaluates structured DOM candidate trees via Jev in sub-80 ms cycles.
+- **[`moritzkremb/jev-voice-browser`](https://github.com/moritzkremb/jev-voice-browser)** *(JavaScript, ⭐ 247)* -- Voice-driven web navigation. Extracts user intent from speech recognition to dispatch Playwright browser actions in 45 ms.
+- **[`kitze/unclutter`](https://github.com/kitze/unclutter)** *(TypeScript, ⭐ 203)* -- WXT-based browser extension. Evaluates web elements to conceal ad banners and popups in 18 ms client-side passes.
+- **[`realZachi/typesafe-adblock`](https://github.com/realZachi/typesafe-adblock)** *(JavaScript, ⭐ 71)* -- Chrome extension asking Jev whether each DOM element is promotional noise. Hides matches instantly with 22 ms heuristic evaluation.
+- **[`Ying-Kai-Liao/jev-browser`](https://github.com/Ying-Kai-Liao/jev-browser)** *(JavaScript, ⭐ 76)* -- Two-tier browser agent combining high-level LLM planning with Jev for atomic clicks and keystrokes on Playwright snapshots in sub-100 ms.
+- **[`chy4pro/jev-for-chrome`](https://github.com/chy4pro/jev-for-chrome)** *(TypeScript, ⭐ 19)* -- Chrome Manifest V3 browser extension porting Jev DOM action selection directly into live browser tabs in sub-50 ms.
+- **[`romaluev/jev-ego`](https://github.com/romaluev/jev-ego)** *(TypeScript, ⭐ 15)* -- Browser automation agent built on Ego Lite. Evaluates candidate DOM elements and selects actions in sub-100 ms cycles.
 - **[`valentynkit/jev-skip`](https://github.com/valentynkit/jev-skip)** *(TypeScript, ⭐ 3)* -- YouTube sponsor block extension. Evaluates streaming caption transcripts with Jev to calculate sponsor probabilities in 35 ms.
 - **[`matthewsoldit/camoufox-jev`](https://x.com/matthewsoldit/status/2100702040938934493)** *(TypeScript)* &middot; [🐦 Thread](https://x.com/matthewsoldit/status/2100702040938934493) -- Stealth browser automation pairing headless Camoufox DOM extractions with Jev choice primitives for anti-bot resilient scraping in sub-80 ms.
   <details open id="demo-matthewsoldit-camoufox-jev">
@@ -125,7 +133,7 @@ This project maintains two distinct, interconnected resources for developers and
 
 ### 2. AI Development, Code Review, and Agent Triage
 
-- **[`tamaratran/fast-jev-compaction`](https://github.com/tamaratran/fast-jev-compaction)** *(TypeScript, ⭐ 5,861)* -- Experimental context compaction tool evaluated by Nous Research, demonstrating mathematical limits of neural session compaction. *Note:* Heavily disputed across the community due to prompt cache busting and questionable utility in long-running agent workflows (see [Context Compaction Trap](#anti-pattern-1-the-context-compaction-trap)).
+- **[`tamaratran/fast-jev-compaction`](https://github.com/tamaratran/fast-jev-compaction)** *(TypeScript, ⭐ 6,356)* -- Experimental context compaction tool evaluated by Nous Research, demonstrating mathematical limits of neural session compaction. *Note:* Heavily disputed across the community due to prompt cache busting and questionable utility in long-running agent workflows (see [Context Compaction Trap](#anti-pattern-1-the-context-compaction-trap)).
   <details open id="demo-tamaratran-fast-jev-compaction">
   <summary><img src="media/tamaratran-fast-jev-compaction-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Compaction Eval</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -138,7 +146,7 @@ This project maintains two distinct, interconnected resources for developers and
   <a href="dossiers/tamaratran-fast-jev-compaction.md"><b>&rarr; Read the complete Context Compaction Dossier</b></a>
   </p>
   </details>
-- **[`thruwire/foreman`](https://github.com/thruwire/foreman)** *(Python, ⭐ 457)* &middot; [🐦 Thread](https://x.com/TriadDarren/status/2100645341393494264) -- Supervisory coordinator overseeing autonomous Codex runs. Decides whether to continue, verify, or halt execution in 32 ms cycles, saving 90%+ of frontier agent token spend ($0.00004 vs $0.03 per step).
+- **[`thruwire/foreman`](https://github.com/thruwire/foreman)** *(Python, ⭐ 520)* &middot; [🐦 Thread](https://x.com/TriadDarren/status/2100645341393494264) -- Supervisory coordinator overseeing autonomous Codex runs. Decides whether to continue, verify, or halt execution in 32 ms cycles, saving 90%+ of frontier agent token spend ($0.00004 vs $0.03 per step).
   <details open id="demo-thruwire-foreman">
   <summary><img src="media/thruwire-foreman-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 📊 <b>View Architecture Diagram</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -148,30 +156,30 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
-- **[`devagrawal09/jev-review`](https://github.com/devagrawal09/jev-review)** *(TypeScript, ⭐ 464)* -- Staged code review workflow and dashboard evaluating Git diffs for assertions and regressions. Audits diffs across 15 criteria in a single GPU pass under 2 s.
-- **[`gargpratyush/jev-router`](https://github.com/gargpratyush/jev-router)** *(JavaScript, ⭐ 302)* -- Turn-by-turn dynamic model router dispatching between lightweight workers and frontier reasoning models. Evaluates prompt complexity in 28 ms, reducing agent API costs by 78%.
-- **[`NiazMorshed2007/jev-review`](https://github.com/NiazMorshed2007/jev-review)** *(TypeScript, ⭐ 193)* -- Local-first MCP server for continuous code quality reviews. Evaluates git diffs against configurable rubrics in 40 ms passes.
-- **[`tamaratran/jev-pruner`](https://github.com/tamaratran/jev-pruner)** *(TypeScript, ⭐ 131)* -- Claude Code plugin that uses TypeSafe Jev to filter noisy Bash stdout. Preserves diagnostics and error traces in 25 ms, slashing 70% of low-entropy token spam.
-- **[`BillionsBobby/JevRouter`](https://github.com/BillionsBobby/JevRouter)** *(TypeScript, ⭐ 133)* &middot; [🐦 Thread](https://x.com/xillionsbobby/status/2100955062776586647) -- Intent-based orchestration router for Codex, Claude Code, and autonomous agents. Dispatches models, subagents, and tools from a shared candidate set via Jev choice in [25 ms](https://github.com/BillionsBobby/JevRouter) without rewriting agent orchestration.
-- **[`0xNatoshi/jev-codex-router`](https://github.com/0xNatoshi/jev-codex-router)** *(Python, ⭐ 155)* -- Per-turn model and thinking-depth router for Codex. Evaluates user intent via Jev in 28 ms, cutting Codex frontier token consumption by 65%.
-- **[`supercorp-ai/supercov`](https://github.com/supercorp-ai/supercov)** *(Rust, ⭐ 87)* -- Code quality and test coverage analyzer for autonomous coding agents. Employs Jev to score source files in 35 ms to prioritize refactoring.
-- **[`EliaAlberti/jev-rules`](https://github.com/EliaAlberti/jev-rules)** *(JavaScript, ⭐ 45)* -- Dynamic rule injection for Claude Code. Matches edited file paths against architectural guidelines in 20 ms.
+- **[`devagrawal09/jev-review`](https://github.com/devagrawal09/jev-review)** *(TypeScript, ⭐ 558)* -- Staged code review workflow and dashboard evaluating Git diffs for assertions and regressions. Audits diffs across 15 criteria in a single GPU pass under 2 s.
+- **[`gargpratyush/jev-router`](https://github.com/gargpratyush/jev-router)** *(JavaScript, ⭐ 349)* -- Turn-by-turn dynamic model router dispatching between lightweight workers and frontier reasoning models. Evaluates prompt complexity in 28 ms, reducing agent API costs by 78%.
+- **[`NiazMorshed2007/jev-review`](https://github.com/NiazMorshed2007/jev-review)** *(TypeScript, ⭐ 206)* -- Local-first MCP server for continuous code quality reviews. Evaluates git diffs against configurable rubrics in 40 ms passes.
+- **[`tamaratran/jev-pruner`](https://github.com/tamaratran/jev-pruner)** *(TypeScript, ⭐ 140)* -- Claude Code plugin that uses TypeSafe Jev to filter noisy Bash stdout. Preserves diagnostics and error traces in 25 ms, slashing 70% of low-entropy token spam.
+- **[`BillionsBobby/JevRouter`](https://github.com/BillionsBobby/JevRouter)** *(TypeScript, ⭐ 175)* &middot; [🐦 Thread](https://x.com/xillionsbobby/status/2100955062776586647) -- Intent-based orchestration router for Codex, Claude Code, and autonomous agents. Dispatches models, subagents, and tools from a shared candidate set via Jev choice in [25 ms](https://github.com/BillionsBobby/JevRouter) without rewriting agent orchestration.
+- **[`0xNatoshi/jev-codex-router`](https://github.com/0xNatoshi/jev-codex-router)** *(Python, ⭐ 228)* -- Per-turn model and thinking-depth router for Codex. Evaluates user intent via Jev in 28 ms, cutting Codex frontier token consumption by 65%.
+- **[`supercorp-ai/supercov`](https://github.com/supercorp-ai/supercov)** *(Rust, ⭐ 106)* -- Code quality and test coverage analyzer for autonomous coding agents. Employs Jev to score source files in 35 ms to prioritize refactoring.
+- **[`EliaAlberti/jev-rules`](https://github.com/EliaAlberti/jev-rules)** *(JavaScript, ⭐ 48)* -- Dynamic rule injection for Claude Code. Matches edited file paths against architectural guidelines in 20 ms.
 - **[`yusukebe/hono-jev-router`](https://github.com/yusukebe/hono-jev-router)** *(TypeScript, ⭐ 45)* -- Semantic HTTP router for the Hono web framework created by Yusuke Wada. Matches incoming requests to intent descriptions in 18 ms single passes.
-- **[`devanshbatham/commit-miner`](https://github.com/devanshbatham/commit-miner)** *(Rust, ⭐ 32)* -- Classifies Git commit diffs and messages into bug fixes, security CWEs, or feature changes in 24 ms.
-- **[`compozy/yoshi`](https://github.com/compozy/yoshi)** *(TypeScript, ⭐ 21)* -- Context management proxy for Claude Code and Codex. Judges context relevance to user prompts in 30 ms, shrinking prompt size by 60%.
-- **[`valentynkit/jev-belay`](https://github.com/valentynkit/jev-belay)** *(JavaScript, ⭐ 17)* -- Pre-completion verification gate for coding agents. Confirms task completion in 25 ms only after tests pass.
-- **[`shitianfang/jev-use`](https://github.com/shitianfang/jev-use)** *(JavaScript, ⭐ 13)* -- Agent workflow plugin for Claude Code and Codex. Automatically offloads discrete decision steps to Jev in sub-30 ms cycles.
-- **[`kyu1204/jgrep`](https://github.com/kyu1204/jgrep)** *(TypeScript, ⭐ 14)* -- Semantic code search and linting CLI for code chunks, git diffs, and CSV rows. Bundles 16 chunks per request using Jev Noul questions to output grep-style file and line coordinates in [sub-50 ms passes](https://github.com/kyu1204/jgrep).
-- **[`valentynkit/jev-commit`](https://github.com/valentynkit/jev-commit)** *(Python, ⭐ 8)* -- Git hook running a single Noul evaluation in 22 ms to confirm a commit message accurately describes the staged diff.
-- **[`zjunlp/JevLoop`](https://github.com/zjunlp/JevLoop)** *(TypeScript, ⭐ 11)* -- Zero-dependency autonomous agent loop from Zhejiang University NLP. Replaces branching LLM prompts with compiled local Jev decisions, eliminating generation latency across [100% of control flow](https://github.com/zjunlp/JevLoop).
-- **[`AntonioCoppe/jev-harness`](https://github.com/AntonioCoppe/jev-harness)** *(TypeScript, ⭐ 8)* -- Decision harness for TypeSafe Jev managing policy rules, shadow mode, and confidence gating in 28 ms.
-- **[`doeixd/jev-pref`](https://github.com/doeixd/jev-pref)** *(JavaScript, ⭐ 4)* -- Code review tool translating AGENTS.md rules into typed Jev schemas. Audits git diffs before commit in 35 ms.
+- **[`devanshbatham/commit-miner`](https://github.com/devanshbatham/commit-miner)** *(Rust, ⭐ 36)* -- Classifies Git commit diffs and messages into bug fixes, security CWEs, or feature changes in 24 ms.
+- **[`compozy/yoshi`](https://github.com/compozy/yoshi)** *(TypeScript, ⭐ 24)* -- Context management proxy for Claude Code and Codex. Judges context relevance to user prompts in 30 ms, shrinking prompt size by 60%.
+- **[`valentynkit/jev-belay`](https://github.com/valentynkit/jev-belay)** *(JavaScript, ⭐ 18)* -- Pre-completion verification gate for coding agents. Confirms task completion in 25 ms only after tests pass.
+- **[`shitianfang/jev-use`](https://github.com/shitianfang/jev-use)** *(JavaScript, ⭐ 19)* -- Agent workflow plugin for Claude Code and Codex. Automatically offloads discrete decision steps to Jev in sub-30 ms cycles.
+- **[`kyu1204/jgrep`](https://github.com/kyu1204/jgrep)** *(TypeScript, ⭐ 16)* -- Semantic code search and linting CLI for code chunks, git diffs, and CSV rows. Bundles 16 chunks per request using Jev Noul questions to output grep-style file and line coordinates in [sub-50 ms passes](https://github.com/kyu1204/jgrep).
+- **[`valentynkit/jev-commit`](https://github.com/valentynkit/jev-commit)** *(Python, ⭐ 10)* -- Git hook running a single Noul evaluation in 22 ms to confirm a commit message accurately describes the staged diff.
+- **[`zjunlp/JevLoop`](https://github.com/zjunlp/JevLoop)** *(TypeScript, ⭐ 16)* -- Zero-dependency autonomous agent loop from Zhejiang University NLP. Replaces branching LLM prompts with compiled local Jev decisions, eliminating generation latency across [100% of control flow](https://github.com/zjunlp/JevLoop).
+- **[`AntonioCoppe/jev-harness`](https://github.com/AntonioCoppe/jev-harness)** *(TypeScript, ⭐ 10)* -- Decision harness for TypeSafe Jev managing policy rules, shadow mode, and confidence gating in 28 ms.
+- **[`doeixd/jev-pref`](https://github.com/doeixd/jev-pref)** *(JavaScript, ⭐ 5)* -- Code review tool translating AGENTS.md rules into typed Jev schemas. Audits git diffs before commit in 35 ms.
 - **[`mblode/taste-lint`](https://github.com/mblode/taste-lint)** *(TypeScript, ⭐ 4)* -- Pre-commit and CI linter detecting AI slop, cliché phrases, and prompt drift in UI copy and agent rules. Evaluates calibrated Jev probabilities on semantic taste checks in [sub-30 ms](https://github.com/mblode/taste-lint).
 - **[`samtay32/jev-system-architect`](https://github.com/samtay32/jev-system-architect)** *(Markdown, ⭐ 2)* -- System architecture skill for coding agents. Identifies brittle semantic logic in source files and rewrites it into typed choices in 35 ms.
-- **[`ariel-frischer/jevkit`](https://github.com/ariel-frischer/jevkit)** *(Rust, ⭐ 2)* -- High-performance Rust CLI and validation library. Evaluates Choice, Score, and Noul questions across 13 offline lint rules before issuing paid API calls, rejecting invalid requests in [sub-5 ms](https://github.com/ariel-frischer/jevkit).
+- **[`ariel-frischer/jevkit`](https://github.com/ariel-frischer/jevkit)** *(Rust, ⭐ 3)* -- High-performance Rust CLI and validation library. Evaluates Choice, Score, and Noul questions across 13 offline lint rules before issuing paid API calls, rejecting invalid requests in [sub-5 ms](https://github.com/ariel-frischer/jevkit).
 - **[`eugeniughelbur/jev-engineering`](https://github.com/eugeniughelbur/jev-engineering)** *(Python, ⭐ 1)* -- Multi-layer decision policy for coding agents combining deterministic rules with single Jev calls. Runs as a Claude Code hook or MCP server, verified against a [300-call prompt injection test suite](https://github.com/eugeniughelbur/jev-engineering).
-- **[`lukstei/slop-grader`](https://github.com/lukstei/slop-grader)** *(TypeScript, ⭐ 5)* -- Rule-based document grading CLI and agent skill. Uses Jev Score for document-level quality and Choice for line-by-line violation flags, directing agents to remediate style defects in [sub-40 ms](https://github.com/lukstei/slop-grader).
-- **[`hemanth/tool-prune`](https://github.com/hemanth/tool-prune)** *(JavaScript)* -- Calibrated tool selection and schema pruning for autonomous agents by Hemanth HM. Filters candidate MCP tools down to relevant subsets using Jev choice and noul in [sub-25 ms](https://github.com/hemanth/tool-prune).
+- **[`lukstei/slop-grader`](https://github.com/lukstei/slop-grader)** *(TypeScript, ⭐ 20)* -- Rule-based document grading CLI and agent skill. Uses Jev Score for document-level quality and Choice for line-by-line violation flags, directing agents to remediate style defects in [sub-40 ms](https://github.com/lukstei/slop-grader).
+- **[`hemanth/tool-prune`](https://github.com/hemanth/tool-prune)** *(JavaScript, ⭐ 5)* -- Calibrated tool selection and schema pruning for autonomous agents by Hemanth HM. Filters candidate MCP tools down to relevant subsets using Jev choice and noul in [sub-25 ms](https://github.com/hemanth/tool-prune).
 - **[`TjKlug/slopcheck`](https://x.com/tj_klug/status/2100695837495992737)** *(TypeScript)* &middot; [🐦 Thread](https://x.com/tj_klug/status/2100695837495992737) -- Code review pipeline combining deterministic AST candidate extraction with semantic Jev scoring. Evaluates PRs in 42 ms.
   <details open id="demo-tjklug-slopcheck">
   <summary><img src="media/tjklug-slopcheck-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 📊 <b>View Pipeline Diagram</b> <i>(Click to pop out full size)</i></summary>
@@ -205,7 +213,7 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
-- **[`AustinAWay/Working-Memory-Jev`](https://github.com/AustinAWay/Working-Memory-Jev)** *(Python, ⭐ 12)* &middot; [🐦 Thread](https://x.com/Austin_Way/status/2102131624921968704) -- Cognitive working-memory load analyzer for personalized educational content. Uses Jev to evaluate active relational bindings in passages, slashing content validation costs from ~$250,000 to ~$2,000 (125x reduction) vs frontier LLMs.
+- **[`AustinAWay/Working-Memory-Jev`](https://github.com/AustinAWay/Working-Memory-Jev)** *(Python, ⭐ 71)* &middot; [🐦 Thread](https://x.com/Austin_Way/status/2102131624921968704) -- Cognitive working-memory load analyzer for personalized educational content. Uses Jev to evaluate active relational bindings in passages, slashing content validation costs from ~$250,000 to ~$2,000 (125x reduction) vs frontier LLMs.
   <details open id="demo-austin-way-working-memory">
   <summary><img src="media/austin-way-working-memory-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Live Working Memory Analysis Demo</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -218,13 +226,13 @@ This project maintains two distinct, interconnected resources for developers and
 
 ### 3. MCP Servers, Agent Skills, and Shell Plugins
 
-- **[`typesafe-ai/skills`](https://github.com/typesafe-ai/skills)** *(Markdown, ⭐ 1,477)* &middot; [🐦 Thread](https://x.com/CompleteSkeptic/status/2099925687465570372) -- Official collection of agent skills for building with TypeSafe Jev and System One APIs. Includes integration patterns and evaluation templates executing in sub-30 ms.
-- **[`kerpopule/hermes-jev-skills`](https://github.com/kerpopule/hermes-jev-skills)** *(Python, ⭐ 396)* -- Jev-powered skill suite for Hermes agent frameworks. Implements low-latency model routing, memory pruning, context compaction, and computer-use decision gating.
-- **[`kitze/skillbox`](https://github.com/kitze/skillbox)** *(TypeScript, ⭐ 222)* -- Self-hosted agent skills library utilizing Jev to recommend tools matching task requirements in 22 ms.
-- **[`jkudish/jev-mcp`](https://github.com/jkudish/jev-mcp)** *(TypeScript, ⭐ 217)* -- TypeScript MCP server exposing semantic ranking, claim verification, and screening primitives to agent loops in 30 ms.
-- **[`itsmostafa/typesafe-mcp`](https://github.com/itsmostafa/typesafe-mcp)** *(Go, ⭐ 191)* -- Zero-dependency Go Model Context Protocol server. Exposes Jev scoring and truth verification to Cursor and Claude in 15 ms.
+- **[`typesafe-ai/skills`](https://github.com/typesafe-ai/skills)** *(Markdown, ⭐ 1,876)* &middot; [🐦 Thread](https://x.com/CompleteSkeptic/status/2099925687465570372) -- Official collection of agent skills for building with TypeSafe Jev and System One APIs. Includes integration patterns and evaluation templates executing in sub-30 ms.
+- **[`kerpopule/hermes-jev-skills`](https://github.com/kerpopule/hermes-jev-skills)** *(Python, ⭐ 607)* -- Jev-powered skill suite for Hermes agent frameworks. Implements low-latency model routing, memory pruning, context compaction, and computer-use decision gating.
+- **[`kitze/skillbox`](https://github.com/kitze/skillbox)** *(TypeScript, ⭐ 229)* -- Self-hosted agent skills library utilizing Jev to recommend tools matching task requirements in 22 ms.
+- **[`jkudish/jev-mcp`](https://github.com/jkudish/jev-mcp)** *(TypeScript, ⭐ 290)* -- TypeScript MCP server exposing semantic ranking, claim verification, and screening primitives to agent loops in 30 ms.
+- **[`itsmostafa/typesafe-mcp`](https://github.com/itsmostafa/typesafe-mcp)** *(Go, ⭐ 263)* -- Zero-dependency Go Model Context Protocol server. Exposes Jev scoring and truth verification to Cursor and Claude in 15 ms.
 - **[`dbreunig/building-with-jev-skill`](https://github.com/dbreunig/building-with-jev-skill)** *(Markdown, ⭐ 128)* -- Drew Breunig's agent skill for Claude Code and Codex providing prompt patterns and schema templates for System One endpoints in sub-30 ms.
-- **[`Dicklesworthstone/skillranker`](https://github.com/Dicklesworthstone/skillranker)** *(Rust, ⭐ 108)* &middot; [Teardown Dossier](dossiers/dicklesworthstone-skillranker.md) -- Standalone CLI by Jeffrey Emanuel using TypeSafe Jev to rank agent skills using live session context. Features Claude Code prompt hooks, local feedback, and an interactive TUI running in sub-5 ms, slashing 80%+ of prompt tokens.
+- **[`Dicklesworthstone/skillranker`](https://github.com/Dicklesworthstone/skillranker)** *(Rust, ⭐ 114)* &middot; [Teardown Dossier](dossiers/dicklesworthstone-skillranker.md) -- Standalone CLI by Jeffrey Emanuel using TypeSafe Jev to rank agent skills using live session context. Features Claude Code prompt hooks, local feedback, and an interactive TUI running in sub-5 ms, slashing 80%+ of prompt tokens.
   <details open id="demo-dicklesworthstone-skillranker">
   <summary><img src="media/dicklesworthstone-skillranker-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Terminal TUI</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -237,36 +245,36 @@ This project maintains two distinct, interconnected resources for developers and
   <a href="dossiers/dicklesworthstone-skillranker.md"><b>&rarr; Read the complete SkillRanker Dossier</b></a>
   </p>
   </details>
-- **[`mrnugget/jev-shell-history`](https://github.com/mrnugget/jev-shell-history)** *(TypeScript, ⭐ 90)* -- Zsh plugin using Jev to select and auto-complete relevant terminal commands from local history in 15 ms.
-- **[`shantanugoel/ask-jev-skill`](https://github.com/shantanugoel/ask-jev-skill)** *(Python, ⭐ 37)* -- Agent skill for Hermes allowing autonomous agents to query Jev for bounded decisions in 25 ms.
-- **[`blakestone-x/jev-mcp`](https://github.com/blakestone-x/jev-mcp)** *(Python, ⭐ 16)* -- Model Context Protocol server exposing TypeSafe Jev classification, scoring, and matching primitives directly to Cursor and Claude Code in 32 ms.
-- **[`valentynkit/jev.nvim`](https://github.com/valentynkit/jev.nvim)** *(Lua, ⭐ 3)* -- Neovim plugin pairing Treesitter function splitting with Jev to support natural language buffer queries in 18 ms.
+- **[`mrnugget/jev-shell-history`](https://github.com/mrnugget/jev-shell-history)** *(TypeScript, ⭐ 104)* -- Zsh plugin using Jev to select and auto-complete relevant terminal commands from local history in 15 ms.
+- **[`shantanugoel/ask-jev-skill`](https://github.com/shantanugoel/ask-jev-skill)** *(Python, ⭐ 39)* -- Agent skill for Hermes allowing autonomous agents to query Jev for bounded decisions in 25 ms.
+- **[`blakestone-x/jev-mcp`](https://github.com/blakestone-x/jev-mcp)** *(Python, ⭐ 21)* -- Model Context Protocol server exposing TypeSafe Jev classification, scoring, and matching primitives directly to Cursor and Claude Code in 32 ms.
+- **[`valentynkit/jev.nvim`](https://github.com/valentynkit/jev.nvim)** *(Lua, ⭐ 5)* -- Neovim plugin pairing Treesitter function splitting with Jev to support natural language buffer queries in 18 ms.
 
 ### 4. Database Filtering, Search, and Knowledge Graphs
 
-- **[`superagents-lab/jev-search`](https://github.com/superagents-lab/jev-search)** *(TypeScript, ⭐ 363)* -- Web search pipeline applying Jev Noul judgments on titles and snippets to rank search engine outputs in 35 ms.
-- **[`realZachi/pg-jev`](https://github.com/realZachi/pg-jev)** *(Shell, ⭐ 274)* -- PostgreSQL extension embedding natural language classification and semantic ranking inside SQL queries in 25 ms.
-- **[`pithings/advocaat`](https://github.com/pithings/advocaat)** *(TypeScript, ⭐ 88)* -- Type-safe data client for querying structured datasets using typed Jev questions without full table scans in 30 ms.
-- **[`giuliosmall/pg_typesafe`](https://github.com/giuliosmall/pg_typesafe)** *(C, ⭐ 81)* -- PostgreSQL extension adding native TypeSafe Jev categorical classification and probability scoring functions inside SQL queries in 20 ms.
-- **[`jexp/neo4jev`](https://github.com/jexp/neo4jev)** *(Jupyter Notebook, ⭐ 63)* -- Graph exploration experiment directing relationship traversal across Neo4j nodes via Jev decision trees in 22 ms.
-- **[`ellipsis-dev/blink`](https://github.com/ellipsis-dev/blink)** *(TypeScript, ⭐ 40)* -- Codebase search engine where file-tree walkers ask Jev which file answers a question in 40 ms, avoiding scanning 95% of repo ASTs.
-- **[`AkashPriyadarshii/jev-seo`](https://github.com/AkashPriyadarshii/jev-seo)** *(Rust, ⭐ 26)* -- Agent-first search radar CLI and MCP server in Rust. Evaluates web relevance scores in sub-20 ms for high-throughput URL analysis.
-- **[`kylemclaren/jevql`](https://github.com/kylemclaren/jevql)** *(Go, ⭐ 11)* -- Command-line tool and SDK adding typed `jev()` SQL functions to vanilla PostgreSQL queries without extensions in 20 ms.
-- **[`reachjalil/jevlogs`](https://github.com/reachjalil/jevlogs)** *(TypeScript, ⭐ 9)* -- OpenTelemetry log triage engine. Scores anomaly signals in high-throughput log streams in 12 ms, processing 5,000 log events/s.
-- **[`AkashPriyadarshii/jev-curate`](https://github.com/AkashPriyadarshii/jev-curate)** *(Rust, ⭐ 11)* -- High-throughput synthetic dataset sifter written in Rust. Uses parallel Jev evaluations in 15 ms passes to filter training pairs.
+- **[`superagents-lab/jev-search`](https://github.com/superagents-lab/jev-search)** *(TypeScript, ⭐ 417)* -- Web search pipeline applying Jev Noul judgments on titles and snippets to rank search engine outputs in 35 ms.
+- **[`realZachi/pg-jev`](https://github.com/realZachi/pg-jev)** *(Shell, ⭐ 315)* -- PostgreSQL extension embedding natural language classification and semantic ranking inside SQL queries in 25 ms.
+- **[`pithings/advocaat`](https://github.com/pithings/advocaat)** *(TypeScript, ⭐ 90)* -- Type-safe data client for querying structured datasets using typed Jev questions without full table scans in 30 ms.
+- **[`giuliosmall/pg_typesafe`](https://github.com/giuliosmall/pg_typesafe)** *(C, ⭐ 82)* -- PostgreSQL extension adding native TypeSafe Jev categorical classification and probability scoring functions inside SQL queries in 20 ms.
+- **[`jexp/neo4jev`](https://github.com/jexp/neo4jev)** *(Jupyter Notebook, ⭐ 100)* -- Graph exploration experiment directing relationship traversal across Neo4j nodes via Jev decision trees in 22 ms.
+- **[`ellipsis-dev/blink`](https://github.com/ellipsis-dev/blink)** *(TypeScript, ⭐ 65)* -- Codebase search engine where file-tree walkers ask Jev which file answers a question in 40 ms, avoiding scanning 95% of repo ASTs.
+- **[`AkashPriyadarshii/jev-seo`](https://github.com/AkashPriyadarshii/jev-seo)** *(Rust, ⭐ 36)* -- Agent-first search radar CLI and MCP server in Rust. Evaluates web relevance scores in sub-20 ms for high-throughput URL analysis.
+- **[`kylemclaren/jevql`](https://github.com/kylemclaren/jevql)** *(Go, ⭐ 12)* -- Command-line tool and SDK adding typed `jev()` SQL functions to vanilla PostgreSQL queries without extensions in 20 ms.
+- **[`reachjalil/jevlogs`](https://github.com/reachjalil/jevlogs)** *(TypeScript, ⭐ 10)* -- OpenTelemetry log triage engine. Scores anomaly signals in high-throughput log streams in 12 ms, processing 5,000 log events/s.
+- **[`AkashPriyadarshii/jev-curate`](https://github.com/AkashPriyadarshii/jev-curate)** *(Rust, ⭐ 31)* -- High-throughput synthetic dataset sifter written in Rust. Uses parallel Jev evaluations in 15 ms passes to filter training pairs.
 - **[`andrelandgraf/safer-with-jev`](https://github.com/andrelandgraf/safer-with-jev)** *(TypeScript, ⭐ 4)* -- Neon serverless Postgres function proxy evaluating semantic query routing and access control in 18 ms.
-- **[`WiktorB2004/llama-index-jev`](https://github.com/WiktorB2004/llama-index-jev)** *(Python, ⭐ 3)* -- LlamaIndex retrieval adapter where Jev scores candidate chunks and evaluates relevance choices in 28 ms, 40x cheaper than LLM rerankers.
-- **[`reachjalil/jev-tree`](https://github.com/reachjalil/jev-tree)** *(TypeScript, ⭐ 3)* -- Recursive choice evaluator routing decisions across hierarchical taxonomy trees in 30 ms to bypass the 255-option limit.
+- **[`WiktorB2004/llama-index-jev`](https://github.com/WiktorB2004/llama-index-jev)** *(Python, ⭐ 4)* -- LlamaIndex retrieval adapter where Jev scores candidate chunks and evaluates relevance choices in 28 ms, 40x cheaper than LLM rerankers.
+- **[`reachjalil/jev-tree`](https://github.com/reachjalil/jev-tree)** *(TypeScript, ⭐ 5)* -- Recursive choice evaluator routing decisions across hierarchical taxonomy trees in 30 ms to bypass the 255-option limit.
 
 ### 5. Security Guardrails, SecOps, and Content Moderation
 
-- **[`y0usaf/pi-jev`](https://github.com/y0usaf/pi-jev)** *(TypeScript, ⭐ 131)* -- Pre-execution tool call gate for Pi agents evaluating risk thresholds before file mutations in 28 ms.
-- **[`DevMortimer/pi-warden`](https://github.com/DevMortimer/pi-warden)** *(TypeScript, ⭐ 124)* -- Security guardrail monitor for Pi coding agents. Intercepts dangerous tool calls and unverified completion claims in 25 ms with zero false-positive rate on safe commands.
-- **[`brainstormity/Jev-Moderation-Bot`](https://github.com/brainstormity/Jev-Moderation-Bot)** *(Python, ⭐ 42)* -- Discord moderation bot evaluating message history to detect scam URLs and raid attacks in 35 ms.
-- **[`jomatsu/pi-jev-auto-mode`](https://github.com/jomatsu/pi-jev-auto-mode)** *(TypeScript, ⭐ 20)* -- Auto-mode gate for the Pi coding agent. Evaluates bash commands and file writes semantically in 22 ms to prevent unintended destructive actions.
-- **[`shiftynick/jev-axi`](https://github.com/shiftynick/jev-axi)** *(TypeScript, ⭐ 17)* -- PreToolUse security gate for Claude Code and Codex scoring destructive command risks before shell execution in 30 ms to stop dangerous execution.
-- **[`leepokai/jev-guard`](https://github.com/leepokai/jev-guard)** *(JavaScript, ⭐ 18)* -- Prompt-injection and dangerous-action detection guardrail for Claude Code and Cursor. Evaluates inputs in 22 ms with 99.4% detection on adversarial jailbreaks.
-- **[`teyhouse/jev-secret-detection`](https://github.com/teyhouse/jev-secret-detection)** *(Python)* -- Security benchmark measuring Jev detection accuracy on real API keys and credentials in git diffs in 20 ms.
+- **[`y0usaf/pi-jev`](https://github.com/y0usaf/pi-jev)** *(TypeScript, ⭐ 140)* -- Pre-execution tool call gate for Pi agents evaluating risk thresholds before file mutations in 28 ms.
+- **[`DevMortimer/pi-warden`](https://github.com/DevMortimer/pi-warden)** *(TypeScript, ⭐ 136)* -- Security guardrail monitor for Pi coding agents. Intercepts dangerous tool calls and unverified completion claims in 25 ms with zero false-positive rate on safe commands.
+- **[`brainstormity/Jev-Moderation-Bot`](https://github.com/brainstormity/Jev-Moderation-Bot)** *(Python, ⭐ 41)* -- Discord moderation bot evaluating message history to detect scam URLs and raid attacks in 35 ms.
+- **[`jomatsu/pi-jev-auto-mode`](https://github.com/jomatsu/pi-jev-auto-mode)** *(TypeScript, ⭐ 23)* -- Auto-mode gate for the Pi coding agent. Evaluates bash commands and file writes semantically in 22 ms to prevent unintended destructive actions.
+- **[`shiftynick/jev-axi`](https://github.com/shiftynick/jev-axi)** *(TypeScript, ⭐ 19)* -- PreToolUse security gate for Claude Code and Codex scoring destructive command risks before shell execution in 30 ms to stop dangerous execution.
+- **[`leepokai/jev-guard`](https://github.com/leepokai/jev-guard)** *(JavaScript, ⭐ 26)* -- Prompt-injection and dangerous-action detection guardrail for Claude Code and Cursor. Evaluates inputs in 22 ms with 99.4% detection on adversarial jailbreaks.
+- **[`teyhouse/jev-secret-detection`](https://github.com/teyhouse/jev-secret-detection)** *(Python, ⭐ 1)* -- Security benchmark measuring Jev detection accuracy on real API keys and credentials in git diffs in 20 ms.
 - **[Havok (@HavokSocial)](https://x.com/HavokSocial/status/2100702139735818568)** *(SecOps Playbook)* &middot; [🐦 Thread](https://x.com/HavokSocial/status/2100702139735818568) -- Automated host isolation and firewall containment in sub-50 ms at >= 0.90 confidence with mandatory human sign-off, achieving zero false-positive lockouts.
   <details open id="demo-socialhavok-security-incident-containment">
   <summary><img src="media/socialhavok-security-incident-containment-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 📊 <b>View Playbook Flow</b> <i>(Click to pop out full size)</i></summary>
@@ -287,13 +295,13 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
-- **[`bitnovus/jev-spam-eval`](https://github.com/bitnovus/jev-spam-eval)** *(Jupyter Notebook)* -- Zero-shot spam and content abuse classifier using Jev boolean questions. Evaluates items in 18 ms.
-- **[`sunil-sadasivan/jevernetes`](https://github.com/sunil-sadasivan/jevernetes)** *(Python)* -- Real-time Kubernetes log analysis CLI and local dashboard on [port 8792](https://github.com/sunil-sadasivan/jevernetes). Couples read-only kubectl streams with Jev judgments to flag cluster anomalies and triage pod failure states.
+- **[`bitnovus/jev-spam-eval`](https://github.com/bitnovus/jev-spam-eval)** *(Jupyter Notebook, ⭐ 0)* -- Zero-shot spam and content abuse classifier using Jev boolean questions. Evaluates items in 18 ms.
+- **[`sunil-sadasivan/jevernetes`](https://github.com/sunil-sadasivan/jevernetes)** *(Python, ⭐ 10)* -- Real-time Kubernetes log analysis CLI and local dashboard on [port 8792](https://github.com/sunil-sadasivan/jevernetes). Couples read-only kubectl streams with Jev judgments to flag cluster anomalies and triage pod failure states.
 
 ### 6. Simulation, Real-Time Gaming, and Physical Control
 
-- **[`jarrodwatts/jev-trader`](https://github.com/jarrodwatts/jev-trader)** *(TypeScript, ⭐ 1,755)* -- High-frequency automated trading bot evaluating buy/sell decisions on Monad order books in 20 ms (defaults to dry-run mock mode).
-- **[`rmalde/minecraft-agent`](https://github.com/rmalde/minecraft-agent)** *(JavaScript, ⭐ 441)* &middot; [🐦 Thread](https://x.com/rronak_/status/2101544156757950697) &middot; [Teardown Dossier](dossiers/rmalde-minecraft-agent.md) -- Dual-system autonomous agent pairing GPT-6 Astra planning with Jev real-time physical actions. Beats the Ender Dragon in Minecraft Java 1.16.5 in 8 minutes 43.300 seconds across 131 Jev decisions. Cost is under $1.00 total ($0.01 Jev at sub-20 ms latency, $0.96 Astra) with zero deaths.
+- **[`jarrodwatts/jev-trader`](https://github.com/jarrodwatts/jev-trader)** *(TypeScript, ⭐ 2,086)* -- High-frequency automated trading bot evaluating buy/sell decisions on Monad order books in 20 ms (defaults to dry-run mock mode).
+- **[`rmalde/minecraft-agent`](https://github.com/rmalde/minecraft-agent)** *(JavaScript, ⭐ 524)* &middot; [🐦 Thread](https://x.com/rronak_/status/2101544156757950697) &middot; [Teardown Dossier](dossiers/rmalde-minecraft-agent.md) -- Dual-system autonomous agent pairing GPT-6 Astra planning with Jev real-time physical actions. Beats the Ender Dragon in Minecraft Java 1.16.5 in 8 minutes 43.300 seconds across 131 Jev decisions. Cost is under $1.00 total ($0.01 Jev at sub-20 ms latency, $0.96 Astra) with zero deaths.
   <details open id="demo-rmalde-minecraft-agent">
   <summary><img src="media/rmalde-minecraft-agent-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Demo</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -306,8 +314,8 @@ This project maintains two distinct, interconnected resources for developers and
   <a href="dossiers/rmalde-minecraft-agent.md"><b>&rarr; Read the complete Minecraft Agent Speedrun Dossier</b></a>
   </p>
   </details>
-- **[`fhshaik/typesafe-mario`](https://github.com/fhshaik/typesafe-mario)** *(Python, ⭐ 326)* -- Emulator control experiment where Jev selects Super Mario Bros actions based on live memory state in 16 ms at 60 FPS.
-- **[`standardagents/jevpilot`](https://github.com/standardagents/jevpilot)** *(JavaScript, ⭐ 150)* &middot; [Teardown Dossier](dossiers/standardagents-jevpilot.md) -- Autonomous driving simulation selecting velocities and routes in Three.js. Evaluates road hazards in 24 ms cycles.
+- **[`fhshaik/typesafe-mario`](https://github.com/fhshaik/typesafe-mario)** *(Python, ⭐ 357)* -- Emulator control experiment where Jev selects Super Mario Bros actions based on live memory state in 16 ms at 60 FPS.
+- **[`standardagents/jevpilot`](https://github.com/standardagents/jevpilot)** *(JavaScript, ⭐ 170)* &middot; [Teardown Dossier](dossiers/standardagents-jevpilot.md) -- Autonomous driving simulation selecting velocities and routes in Three.js. Evaluates road hazards in 24 ms cycles.
   <details open id="demo-standardagents-jevpilot">
   <summary><img src="media/standardagents-jevpilot-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Simulator Demo</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -317,7 +325,7 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
-- **[`RomanSlack/jev-drone`](https://github.com/RomanSlack/jev-drone)** *(Python, ⭐ 107)* &middot; [Teardown Dossier](dossiers/romanslack-jev-drone.md) -- Camera-only quadrotor drone simulation on MuJoCo physics. Raycast vectors are scored at 2.5 Hz via Jev choice in 30 ms to avoid dynamic obstacles.
+- **[`RomanSlack/jev-drone`](https://github.com/RomanSlack/jev-drone)** *(Python, ⭐ 138)* &middot; [Teardown Dossier](dossiers/romanslack-jev-drone.md) -- Camera-only quadrotor drone simulation on MuJoCo physics. Raycast vectors are scored at 2.5 Hz via Jev choice in 30 ms to avoid dynamic obstacles.
   <details open id="demo-romanslack-jev-drone">
   <summary><img src="media/romanslack-jev-drone-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Drone Demo</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -327,7 +335,7 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
-- **[`ChetasLua/jevmeter`](https://github.com/ChetasLua/jevmeter)** *(Python, ⭐ 78)* &middot; [Teardown Dossier](dossiers/chetaslua-jevmeter.md) -- Video analysis engine scoring transcripts sentence-by-sentence via Jev in 30 ms. Renders confidence gauges at $0.0015 for an entire 1-hour live stream.
+- **[`ChetasLua/jevmeter`](https://github.com/ChetasLua/jevmeter)** *(Python, ⭐ 81)* &middot; [Teardown Dossier](dossiers/chetaslua-jevmeter.md) -- Video analysis engine scoring transcripts sentence-by-sentence via Jev in 30 ms. Renders confidence gauges at $0.0015 for an entire 1-hour live stream.
   <details open id="demo-chetaslua-jevmeter">
   <summary><img src="media/chetaslua-jevmeter-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Video Analysis Demo</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -337,7 +345,7 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
-- **[`sepiablue-ai/ComfyUI-MiniMax-H3-W4A4-VSA`](https://github.com/sepiablue-ai/ComfyUI-MiniMax-H3-W4A4-VSA/tree/exp/jev-adaptive-vsa)** *(Python, ⭐ 92)* &middot; [🐦 Thread](https://x.com/sep_is_heim/status/2101603192664740330) &middot; [Teardown Dossier](dossiers/kamimoto-minimax-h3-jgas.md) -- J-GAS (Jev-Guided Adaptive Sparsity) for MiniMax H3 video generation. Dynamically judges Attention layer importance across 4 Turbo steps and 50 DiT layers (policy `layer_v5`), selecting sparsity retention rates (1%, 3%, 5%, 10%) via Jev choice. Reduces generation time on an RTX 4070 from 6 m 07 s to 3 m 34 s (41.7% speedup, saving 153 s per video). Measured live API spend is $0.0392 for 1,037,063 tokens across 20--30 generated videos (~$0.0015 per video).
+- **[`sepiablue-ai/ComfyUI-MiniMax-H3-W4A4-VSA`](https://github.com/sepiablue-ai/ComfyUI-MiniMax-H3-W4A4-VSA/tree/exp/jev-adaptive-vsa)** *(Python, ⭐ 107)* &middot; [🐦 Thread](https://x.com/sep_is_heim/status/2101603192664740330) &middot; [Teardown Dossier](dossiers/kamimoto-minimax-h3-jgas.md) -- J-GAS (Jev-Guided Adaptive Sparsity) for MiniMax H3 video generation. Dynamically judges Attention layer importance across 4 Turbo steps and 50 DiT layers (policy `layer_v5`), selecting sparsity retention rates (1%, 3%, 5%, 10%) via Jev choice. Reduces generation time on an RTX 4070 from 6 m 07 s to 3 m 34 s (41.7% speedup, saving 153 s per video). Measured live API spend is $0.0392 for 1,037,063 tokens across 20--30 generated videos (~$0.0015 per video).
   <details open id="demo-kamimoto-minimax-h3">
   <summary><img src="media/kamimoto-minimax-h3-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Demo</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -350,11 +358,11 @@ This project maintains two distinct, interconnected resources for developers and
   <a href="dossiers/kamimoto-minimax-h3-jgas.md"><b>&rarr; Read the complete MiniMax H3 J-GAS Video Acceleration Dossier</b></a>
   </p>
   </details>
-- **[`aowang-ai/jev-trade`](https://github.com/aowang-ai/jev-trade)** *(TypeScript, ⭐ 81)* -- Hyperliquid automated trading bot querying Jev on each orderbook tick in 25 ms to evaluate sizing, directional choice, and risk.
-- **[`AboveColin/HA-Jev`](https://github.com/AboveColin/HA-Jev)** *(Python, ⭐ 40)* -- Home Assistant integration evaluating home sensor state in 30 ms to trigger household automations.
-- **[`socai-io/jev-social`](https://github.com/socai-io/jev-social)** *(JavaScript, ⭐ 40)* -- Social media research tool using Jev for typed intent routing and automated sentiment scoring in 25 ms.
-- **[`phyous/tsai-sc`](https://github.com/phyous/tsai-sc)** *(Python, ⭐ 20)* -- StarCraft harness evaluating 421 structured tactical decisions in real time in 18 ms.
-- **[`TarunTomar122/jev-askable-arm`](https://github.com/TarunTomar122/jev-askable-arm)** *(Python, ⭐ 9)* &middot; [Teardown Dossier](dossiers/taruntomar122-jev-askable-arm.md) -- Simulated Franka robotic arm in ManiSkill physics. Jev evaluates geometric scene state and selects motion primitives in 28 ms.
+- **[`aowang-ai/jev-trade`](https://github.com/aowang-ai/jev-trade)** *(TypeScript, ⭐ 111)* -- Hyperliquid automated trading bot querying Jev on each orderbook tick in 25 ms to evaluate sizing, directional choice, and risk.
+- **[`AboveColin/HA-Jev`](https://github.com/AboveColin/HA-Jev)** *(Python, ⭐ 50)* -- Home Assistant integration evaluating home sensor state in 30 ms to trigger household automations.
+- **[`socai-io/jev-social`](https://github.com/socai-io/jev-social)** *(JavaScript, ⭐ 47)* -- Social media research tool using Jev for typed intent routing and automated sentiment scoring in 25 ms.
+- **[`phyous/tsai-sc`](https://github.com/phyous/tsai-sc)** *(Python, ⭐ 23)* -- StarCraft harness evaluating 421 structured tactical decisions in real time in 18 ms.
+- **[`TarunTomar122/jev-askable-arm`](https://github.com/TarunTomar122/jev-askable-arm)** *(Python, ⭐ 10)* &middot; [Teardown Dossier](dossiers/taruntomar122-jev-askable-arm.md) -- Simulated Franka robotic arm in ManiSkill physics. Jev evaluates geometric scene state and selects motion primitives in 28 ms.
   <details open id="demo-taruntomar122-jev-askable-arm">
   <summary><img src="media/taruntomar122-jev-askable-arm-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Simulation</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -364,9 +372,9 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
-- **[`lukaske/jev-doom-agent`](https://github.com/lukaske/jev-doom-agent)** *(TypeScript, ⭐ 5)* -- Browser-native Chocolate Doom WASM agent. Evaluates spatial coordinates and enemy vectors in 28 ms to select game actions.
+- **[`lukaske/jev-doom-agent`](https://github.com/lukaske/jev-doom-agent)** *(TypeScript, ⭐ 8)* -- Browser-native Chocolate Doom WASM agent. Evaluates spatial coordinates and enemy vectors in 28 ms to select game actions.
 - **[`lbotinelly/jev-little-airways`](https://github.com/lbotinelly/jev-little-airways)** *(HTML, ⭐ 5)* -- Island air traffic control simulation where planes observe localized airspace. Jev selects runway approaches and holding patterns in 25 ms.
-- **[`valentynkit/jev-plays-pokemon-red`](https://github.com/valentynkit/jev-plays-pokemon-red)** *(Python, ⭐ 4)* &middot; [Teardown Dossier](dossiers/valentynkit-jev-plays-pokemon-red.md) -- Game Boy emulator agent where A* code handles pathfinding. Jev makes strategic decisions at gym battles and plot forks in 24 ms.
+- **[`valentynkit/jev-plays-pokemon-red`](https://github.com/valentynkit/jev-plays-pokemon-red)** *(Python, ⭐ 6)* &middot; [Teardown Dossier](dossiers/valentynkit-jev-plays-pokemon-red.md) -- Game Boy emulator agent where A* code handles pathfinding. Jev makes strategic decisions at gym battles and plot forks in 24 ms.
   <details open id="demo-valentynkit-jev-plays-pokemon-red">
   <summary><img src="media/valentynkit-jev-plays-pokemon-red-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Gameplay Demo</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -376,7 +384,7 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
-- **[`choxos/jevchess`](https://github.com/choxos/jevchess)** *(JavaScript, ⭐ 1)* &middot; [Teardown Dossier](dossiers/choxos-jevchess.md) -- Real-time chess candidate move evaluation without minimax tree search. Predicts candidate blunders and grandmaster moves in under 30 ms per turn.
+- **[`choxos/jevchess`](https://github.com/choxos/jevchess)** *(JavaScript, ⭐ 5)* &middot; [Teardown Dossier](dossiers/choxos-jevchess.md) -- Real-time chess candidate move evaluation without minimax tree search. Predicts candidate blunders and grandmaster moves in under 30 ms per turn.
   <details open id="demo-choxos-jevchess">
   <summary><img src="media/choxos-jevchess-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Chess Demo</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -430,11 +438,21 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
+- **[`zaidbul/robotic-arm-jev`](https://x.com/zaidbul)** *(Python)* &middot; [🐦 Thread](https://x.com/zaidbul) -- Real-world robotic arm sorting physical workspace objects in real time. Coordinates evaluated by Jev in sub-50 ms cycles without cloud latency.
+  <details open id="demo-zaidbul-robotic-arm">
+  <summary><img src="media/physical-robotic-arm-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Robotic Arm Demo</b> <i>(Click to pop out full size)</i></summary>
+  <p align="center">
+  <a href="https://x.com/zaidbul" target="_blank" rel="noopener noreferrer">
+  <img src="media/physical-robotic-arm-demo.webp" alt="Zero-Shot Physical Robotic Arm" width="560"><br>
+  <small>🐦 <b>View original demonstration and discussion on X &rarr;</b></small>
+  </a>
+  </p>
+  </details>
 
 ### 7. Benchmarks and Empirical Evaluations
 
-- **[`vinilana/jev-eval-agent`](https://github.com/vinilana/jev-eval-agent)** *(HTML, ⭐ 101)* -- Public evaluation agent framework for benchmarking System One models across custom task rubrics in sub-40 ms.
-- **[`phuryn/experiments`](https://github.com/phuryn/experiments)** *(Python, ⭐ 52)* &middot; [🐦 Thread](https://x.com/PawelHuryn/status/2101213026204401921) &middot; [Teardown Dossier](dossiers/phuryn-invoice-benchmark.md) -- Paweł Huryn's 50-edge-case adversarial invoice benchmark across 6 models. Evaluated Jev against GPT-OSS 20 B, Ministral 8 B, and Claude Opus 5, achieving 50/50 accuracy in 30 ms ($0.025 / 1k calls vs $2.83 for Opus 5).
+- **[`vinilana/jev-eval-agent`](https://github.com/vinilana/jev-eval-agent)** *(HTML, ⭐ 105)* -- Public evaluation agent framework for benchmarking System One models across custom task rubrics in sub-40 ms.
+- **[`phuryn/experiments`](https://github.com/phuryn/experiments)** *(Python, ⭐ 54)* &middot; [🐦 Thread](https://x.com/PawelHuryn/status/2101213026204401921) &middot; [Teardown Dossier](dossiers/phuryn-invoice-benchmark.md) -- Paweł Huryn's 50-edge-case adversarial invoice benchmark across 6 models. Evaluated Jev against GPT-OSS 20 B, Ministral 8 B, and Claude Opus 5, achieving 50/50 accuracy in 30 ms ($0.025 / 1k calls vs $2.83 for Opus 5).
   <details open id="demo-phuryn-experiments">
   <summary><img src="media/phuryn-experiments-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Benchmark</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -447,8 +465,8 @@ This project maintains two distinct, interconnected resources for developers and
   <a href="dossiers/phuryn-invoice-benchmark.md"><b>&rarr; Read the complete Invoice Benchmark Teardown Dossier</b></a>
   </p>
   </details>
-- **[`nanmicoder/jev-arena`](https://github.com/nanmicoder/jev-arena)** *(JavaScript, ⭐ 63)* -- Live side-by-side throughput arena comparing Jev against DeepSeek Flash across 10,000 parallel requests in 30 ms median latency.
-- **[`iammrduncan/typesafe-ai-benchmark`](https://github.com/iammrduncan/typesafe-ai-benchmark)** *(TypeScript, ⭐ 36)* &middot; [🐦 Thread](https://x.com/ephraimduncan/status/2100454070536351824) -- Side-by-side benchmark of Jev vs Qwen 3.8 27 B on Cerebras for operational decision questions. Measures 30 ms forward passes and a 95% latency reduction.
+- **[`nanmicoder/jev-arena`](https://github.com/nanmicoder/jev-arena)** *(JavaScript, ⭐ 96)* -- Live side-by-side throughput arena comparing Jev against DeepSeek Flash across 10,000 parallel requests in 30 ms median latency.
+- **[`iammrduncan/typesafe-ai-benchmark`](https://github.com/iammrduncan/typesafe-ai-benchmark)** *(TypeScript, ⭐ 38)* &middot; [🐦 Thread](https://x.com/ephraimduncan/status/2100454070536351824) -- Side-by-side benchmark of Jev vs Qwen 3.8 27 B on Cerebras for operational decision questions. Measures 30 ms forward passes and a 95% latency reduction.
   <details open id="demo-iammrduncan-typesafe-ai-benchmark">
   <summary><img src="media/iammrduncan-typesafe-ai-benchmark-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Benchmark Demo</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -458,12 +476,12 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
-- **[`AbdelStark/jev-benchmarks`](https://github.com/AbdelStark/jev-benchmarks)** *(Python, ⭐ 15)* -- Probability-aware evaluation harness for typed decision models. Measures expected calibration error (ECE) and selective risk.
+- **[`AbdelStark/jev-benchmarks`](https://github.com/AbdelStark/jev-benchmarks)** *(Python, ⭐ 17)* -- Probability-aware evaluation harness for typed decision models. Measures expected calibration error (ECE) and selective risk.
 - **[`abhixhek/jevcal`](https://github.com/abhixhek/jevcal)** *(Python, ⭐ 10)* -- Model calibration and threshold tuning tool. Computes empirical confidence boundaries and monitors distribution drift across production Jev calls.
 - **[`mahlernim/jev-korean-benchmark`](https://github.com/mahlernim/jev-korean-benchmark)** *(Python, ⭐ 6)* -- Cross-lingual evaluation of Jev on Korean natural language understanding and clinical terminology in 35 ms passes.
 - **[`zhuyansen/jev-search-rerank-eval`](https://github.com/zhuyansen/jev-search-rerank-eval)** *(Python, ⭐ 6)* -- Graded relevance benchmark evaluating Jev reranking against vector embeddings across 9,831 labeled pairs in 24 ms.
-- **[`wondertwins/jev-benchmark`](https://github.com/wondertwins/jev-benchmark)** *(Python, ⭐ 5)* -- System One evaluation playground measuring Jev decision accuracy across chess moves and speech-to-text speaker identification in 30 ms.
-- **[`anessbelbati/jev-rerank-bench`](https://github.com/anessbelbati/jev-rerank-bench)** *(Python, ⭐ 5)* -- Cross-encoder retrieval benchmark measuring Jev reranking performance (nDCG@10 0.692 vs Cohere Rerank-v3 0.691 across 14 BEIR datasets at 42x lower cost).
+- **[`wondertwins/jev-benchmark`](https://github.com/wondertwins/jev-benchmark)** *(Python, ⭐ 6)* -- System One evaluation playground measuring Jev decision accuracy across chess moves and speech-to-text speaker identification in 30 ms.
+- **[`anessbelbati/jev-rerank-bench`](https://github.com/anessbelbati/jev-rerank-bench)** *(Python, ⭐ 6)* -- Cross-encoder retrieval benchmark measuring Jev reranking performance (nDCG@10 0.692 vs Cohere Rerank-v3 0.691 across 14 BEIR datasets at 42x lower cost).
 - **[`Gaurav-Gosain/jev-sec-bench`](https://github.com/Gaurav-Gosain/jev-sec-bench)** *(Go, ⭐ 2)* -- Blind security evaluation benchmark testing prompt injection resistance and vulnerability detection in 25 ms (100% on deserialization, 93.5% on SQL injection).
   <details open id="demo-gaurav-gosain-jev-sec-bench">
   <summary><img src="media/gaurav-gosain-jev-sec-bench-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Benchmark Chart</b> <i>(Click to pop out full size)</i></summary>
@@ -474,11 +492,11 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
-- **[`anisselbd/jev-phishing-bench`](https://github.com/anisselbd/jev-phishing-bench)** *(Python, ⭐ 2)* -- Adversarial evaluation across 2,000 phishing emails comparing Jev against Claude Haiku 4.5 in 30 ms.
+- **[`anisselbd/jev-phishing-bench`](https://github.com/anisselbd/jev-phishing-bench)** *(Python, ⭐ 4)* -- Adversarial evaluation across 2,000 phishing emails comparing Jev against Claude Haiku 4.5 in 30 ms.
 - **[`TokenTrim/jev-agent-failure-benchmark`](https://github.com/TokenTrim/jev-agent-failure-benchmark)** *(Python, ⭐ 2)* -- Who&When Pro agent failure attribution benchmark comparing Jev against frontier LLMs on identifying failed steps in 32 ms (130x cheaper).
 - **[`dayhaysoos/jevals`](https://github.com/dayhaysoos/jevals)** *(TypeScript, ⭐ 1)* -- Local evaluation workbench for authoring, running, and diffing Jev benchmark cases across Choice, Noul, and Score rubrics with [69 passing unit tests](https://github.com/dayhaysoos/jevals).
-- **[`vclic/smoking-extraction-benchmark`](https://github.com/vclic/smoking-extraction-benchmark)** *(Python)* -- Clinical extraction benchmark across 1,000 synthetic patient notes. Jev achieved 98.6% accuracy at 1/35th the token cost of OpenAI structured outputs.
-- **[`manjunathshiva/jev-frontier-bench`](https://github.com/manjunathshiva/jev-frontier-bench)** *(Python)* -- Pareto frontier benchmark comparing Jev against 5 frontier LLMs across 200 decisions. Jev scored 72.5% accuracy at $0.025 / 1k calls, while Claude Fable 5.1 cost 478x more ($11.81).
+- **[`vclic/smoking-extraction-benchmark`](https://github.com/vclic/smoking-extraction-benchmark)** *(Python, ⭐ 0)* -- Clinical extraction benchmark across 1,000 synthetic patient notes. Jev achieved 98.6% accuracy at 1/35th the token cost of OpenAI structured outputs.
+- **[`manjunathshiva/jev-frontier-bench`](https://github.com/manjunathshiva/jev-frontier-bench)** *(Python, ⭐ 0)* -- Pareto frontier benchmark comparing Jev against 5 frontier LLMs across 200 decisions. Jev scored 72.5% accuracy at $0.025 / 1k calls, while Claude Fable 5.1 cost 478x more ($11.81).
   <details open id="demo-manjunathshiva-jev-frontier-bench">
   <summary><img src="media/manjunathshiva-jev-frontier-bench-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Pareto Chart</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -531,7 +549,7 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
-- **[`ably-labs/jev-pong`](https://github.com/ably-labs/jev-pong)** *(TypeScript)* -- Real-time Pong benchmark where every ball step is evaluated by Jev vs frontier LLMs through Vercel AI Gateway in 20 ms.
+- **[`ably-labs/jev-pong`](https://github.com/ably-labs/jev-pong)** *(TypeScript, ⭐ 0)* -- Real-time Pong benchmark where every ball step is evaluated by Jev vs frontier LLMs through Vercel AI Gateway in 20 ms.
 - **[`qainsights/jev-bench`](https://x.com/QAInsights/status/2100079359063204238)** *(Python)* &middot; [🐦 Thread](https://x.com/QAInsights/status/2100079359063204238) -- QA automation and load performance evaluation comparing Jev round-trip latency against generative LLMs for test suite triage.
   <details open id="demo-qainsights-automation">
   <summary><img src="media/qainsights-automation-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Video Demo</b> <i>(Click to pop out full size)</i></summary>
@@ -556,8 +574,21 @@ This project maintains two distinct, interconnected resources for developers and
 
 ### 8. Competing Fast Classifiers and Open Reproductions
 
-- **[`urchade/GLiNER`](https://github.com/urchade/GLiNER)** *(Python, ⭐ 3,878)* &middot; [🐦 Thread](https://x.com/singularity_sah/status/2101450114246000706) -- Generalist bidirectional transformer encoder framework for zero-shot information extraction and classification without autoregressive LLM decoding. Operates in 15--35 ms on local GPUs with zero generated tokens.
-- **[`TheoLeeCJ/SemIf`](https://github.com/TheoLeeCJ/SemIf)** *(Python, ⭐ 2,956)* -- Open-source research reading choice probabilities directly from open model output heads without text generation. Self-hosted on consumer RTX 3090/4090 GPUs in 18 ms.
+- **[`urchade/GLiNER`](https://github.com/urchade/GLiNER)** *(Python, ⭐ 3,913)* &middot; [🐦 Thread](https://x.com/singularity_sah/status/2101450114246000706) -- Generalist bidirectional transformer encoder framework for zero-shot information extraction and classification without autoregressive LLM decoding. Operates in 15--35 ms on local GPUs with zero generated tokens.
+- **[`fastino/GLiNER2.5-Decide`](https://huggingface.co/fastino/GLiNER2.5-Decide)** *(Python, ⭐ 2,163)* &middot; [🐦 Thread](https://x.com/fastinoAI/status/2103188985292157353) &middot; [GitHub](https://github.com/fastino-ai/GLiNER2) &middot; [Teardown Dossier](dossiers/fastino-gliner2-5-decide.md) -- Fastino's 340 M parameter open-weight decision model for constrained classification and joint schema decoding. Evaluates typed rules, mutual exclusions, and character-level entity spans in 38--47 ms on GPUs (167 ms on CPU). Achieved 60.1% accuracy across 17 datasets on the [Fast Decisions Benchmark](https://huggingface.co/datasets/fastino/fast-decisions) (leading 9 of 17 over SemIf, JevK5, and Laya) with 0 generated tokens ($0.00 marginal cost local weights).
+  <details open id="demo-fastino-gliner2-5-decide">
+  <summary><img src="media/fastino-gliner2-5-decide-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Benchmark Chart</b> <i>(Click to pop out full size)</i></summary>
+  <p align="center">
+  <a href="https://x.com/fastinoAI/status/2103188985292157353" target="_blank" rel="noopener noreferrer">
+  <img src="media/fastino-gliner2-5-decide-benchmark.webp" alt="Fastino Labs GLiNER2.5-Decide Benchmark on Fast Decisions Suite" width="680"><br>
+  <small>🐦 <b>View original demonstration and discussion on X &rarr;</b></small>
+  </a>
+  </p>
+  <p align="center">
+  <a href="dossiers/fastino-gliner2-5-decide.md"><b>&rarr; Read the complete GLiNER2.5-Decide Architectural Dossier</b></a>
+  </p>
+  </details>
+- **[`TheoLeeCJ/SemIf`](https://github.com/TheoLeeCJ/SemIf)** *(Python, ⭐ 3,890)* -- Open-source research reading choice probabilities directly from open model output heads without text generation. Self-hosted on consumer RTX 3090/4090 GPUs in 18 ms.
   <details open id="demo-theoleecj-semif">
   <summary><img src="media/theoleecj-semif-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Benchmark Chart</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -567,7 +598,7 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
-- **[`mizorewww/laya-mlx`](https://github.com/mizorewww/laya-mlx)** *(Python, ⭐ 3,185)* &middot; [Teardown Dossier](dossiers/mizorewww-laya-mlx.md) -- Apple Silicon MLX implementation of the Laya non-autoregressive decision engine. Runs offline at 34.8 ms latency and 11.4 decisions/s on M-series chips.
+- **[`mizorewww/laya-mlx`](https://github.com/mizorewww/laya-mlx)** *(Python, ⭐ 5,553)* &middot; [Teardown Dossier](dossiers/mizorewww-laya-mlx.md) -- Apple Silicon MLX implementation of the Laya non-autoregressive decision engine. Runs offline at 34.8 ms latency and 11.4 decisions/s on M-series chips.
   <details open id="demo-mizorewww-laya-mlx">
   <summary><img src="media/mizorewww-laya-mlx-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View MLX Demo</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -577,7 +608,7 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
-- **[`TianyuCodings/NanoJev`](https://github.com/TianyuCodings/NanoJev)** *(Python, ⭐ 1,762)* &middot; [Teardown Dossier](dossiers/tianyucodings-nanojev.md) -- Open 0.6 B parameter Jev replica based on Qwen3-0.6B weights with parallel decisions and complete probability distributions. Navigates dynamic mazes at 256 decisions/s on Apple Silicon or 4 GB VRAM GPUs.
+- **[`TianyuCodings/NanoJev`](https://github.com/TianyuCodings/NanoJev)** *(Python, ⭐ 2,021)* &middot; [Teardown Dossier](dossiers/tianyucodings-nanojev.md) -- Open 0.6 B parameter Jev replica based on Qwen3-0.6B weights with parallel decisions and complete probability distributions. Navigates dynamic mazes at 256 decisions/s on Apple Silicon or 4 GB VRAM GPUs.
   <details open id="demo-tianyucodings-nanojev">
   <summary><img src="media/tianyucodings-nanojev-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Maze Replay</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -587,21 +618,21 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
-- **[`jaredpalmer/kev`](https://github.com/jaredpalmer/kev)** *(Python, ⭐ 2,035)* &middot; [🐦 Thread](https://x.com/jaredpalmer) -- Open Apache-2.0 decision model family built on Qwen 3.5 (0.8B, 4B, and 9B variants) by Jared Palmer. Replicates Jev's typed contract locally on Apple Silicon and CUDA without cloud API costs; also ported to ONNX and WebGPU by [Nico Martin](https://x.com/nicodotdev/status/2101925774278152664).
-- **[`vinnylarouge/jevlike`](https://github.com/vinnylarouge/jevlike)** *(Python, ⭐ 1,158)* -- Training framework optimizing small language models to evaluate variable-length choice sets in parallel. Runs Doom and chess demos in sub-25 ms.
-- **[`featherless-ai/simple-jev`](https://github.com/featherless-ai/simple-jev)** *(Python, ⭐ 438)* -- Drop-in server turning open-weights foundation models into non-autoregressive classifiers in a single GPU pass. Available self-hosted or via hosted serverless endpoints at ~$0.002--$0.005 / 1k decisions.
-- **[`wfzyx/von`](https://github.com/wfzyx/von)** *(Python, ⭐ 324)* -- Open-source System One decision model running sub-15 ms, non-autoregressive, local drop-in alternative to TypeSafe Jev with RLCD training.
-- **[`ekzhang/openjev-sglang`](https://github.com/ekzhang/openjev-sglang)** *(Python, ⭐ 247)* -- SGLang-compatible prefill-only API implementation designed for ultra-high-throughput parallel choice evaluation on self-hosted GPU clusters in sub-20 ms forward passes.
-- **[`hr98w/jev-visual`](https://github.com/hr98w/jev-visual)** *(Python, ⭐ 208)* -- Multimodal visual reasoning experiment on Apple Silicon. Evaluates shared image-text contexts with Jev-style constrained choice scoring in 32 ms.
-- **[`logan-markewich/jeff`](https://github.com/logan-markewich/jeff)** *(Python, ⭐ 193)* -- Self-hosted drop-in replacement for TypeSafe Jev powered by a 400 M parameter GLiFormer/GLiNER encoder wrapped in FastAPI. Evaluates local schemas on CPU, Apple Silicon, or cloud GPUs in sub-30 ms.
-- **[`Mapika/decider`](https://github.com/Mapika/decider)** *(Python, ⭐ 266)* -- Fast decision model reproducing System One using a fine-tuned Qwen3.5-2B base. Emits typed probability distributions across custom categorical choice sets in 28 ms. Achieved 71.0% macro accuracy at 30 decisions/s on S1Bench (10x faster than Jev).
-- **[`Yinsongxu/LLM2Jev`](https://github.com/Yinsongxu/LLM2Jev)** *(Python, ⭐ 123)* -- Adapts local open-weight language models into Jev-compatible structured decision engines. Exposes Choice, Score, and Noul probability outputs via prefill-only binary inference.
-- **[`daseinlabs/open-jev`](https://github.com/daseinlabs/open-jev)** *(Python, ⭐ 85)* -- One-pass option scoring on Apple Silicon via MLX. Evaluates choices in 22 ms with interactive Doom demos.
-- **[`Heman10x-NGU/Verdict-open-jev`](https://github.com/Heman10x-NGU/Verdict-open-jev)** *(Python, ⭐ 63)* -- Non-autoregressive decision engine with calibrated uncertainty (RLCD) and in-browser WebGPU playground.
-- **[`bnsd55/jevmlx`](https://github.com/bnsd55/jevmlx)** *(Python, ⭐ 52)* -- Apple Silicon MLX library generating constrained parallel decisions and schema-valid probabilities from open-weight models in 26 ms.
-- **[`ikermoel/open-alternative-jev`](https://github.com/ikermoel/open-alternative-jev)** *(Python, ⭐ 45)* -- Open alternative to Jev emitting typed, calibrated decisions from open-weights LLMs in one forward pass via Hugging Face and vLLM in 26 ms.
-- **[`zhengxuyu/litjev`](https://github.com/zhengxuyu/litjev)** *(Python, ⭐ 36)* -- Open reproduction of Jev's decision layer on open LLM backends. Exposes a drop-in `/v1/systemone` server with single-pass logit extraction in 25 ms.
-- **[`OmniJev/PlayJev`](https://github.com/OmniJev/PlayJev)** *(JavaScript, ⭐ 19)* -- 0.8 B parameter distilled fast classifier trained on Qwen3.5-0.8B weights for arcade game control and browser automation. Runs locally on consumer hardware in under 20 ms.
+- **[`jaredpalmer/kev`](https://github.com/jaredpalmer/kev)** *(Python, ⭐ 4,546)* &middot; [🐦 Thread](https://x.com/jaredpalmer) -- Open Apache-2.0 decision model family built on Qwen 3.5 (0.8B, 4B, and 9B variants) by Jared Palmer. Replicates Jev's typed contract locally on Apple Silicon and CUDA without cloud API costs; also ported to ONNX and WebGPU by [Nico Martin](https://x.com/nicodotdev/status/2101925774278152664).
+- **[`vinnylarouge/jevlike`](https://github.com/vinnylarouge/jevlike)** *(Python, ⭐ 1,241)* -- Training framework optimizing small language models to evaluate variable-length choice sets in parallel. Runs Doom and chess demos in sub-25 ms.
+- **[`featherless-ai/simple-jev`](https://github.com/featherless-ai/simple-jev)** *(Python, ⭐ 485)* -- Drop-in server turning open-weights foundation models into non-autoregressive classifiers in a single GPU pass. Available self-hosted or via hosted serverless endpoints at ~$0.002--$0.005 / 1k decisions.
+- **[`wfzyx/von`](https://github.com/wfzyx/von)** *(Python, ⭐ 501)* -- Open-source System One decision model running sub-15 ms, non-autoregressive, local drop-in alternative to TypeSafe Jev with RLCD training.
+- **[`ekzhang/openjev-sglang`](https://github.com/ekzhang/openjev-sglang)** *(Python, ⭐ 272)* -- SGLang-compatible prefill-only API implementation designed for ultra-high-throughput parallel choice evaluation on self-hosted GPU clusters in sub-20 ms forward passes.
+- **[`hr98w/jev-visual`](https://github.com/hr98w/jev-visual)** *(Python, ⭐ 243)* -- Multimodal visual reasoning experiment on Apple Silicon. Evaluates shared image-text contexts with Jev-style constrained choice scoring in 32 ms.
+- **[`logan-markewich/jeff`](https://github.com/logan-markewich/jeff)** *(Python, ⭐ 219)* -- Self-hosted drop-in replacement for TypeSafe Jev powered by a 400 M parameter GLiFormer/GLiNER encoder wrapped in FastAPI. Evaluates local schemas on CPU, Apple Silicon, or cloud GPUs in sub-30 ms.
+- **[`Mapika/decider`](https://github.com/Mapika/decider)** *(Python, ⭐ 318)* -- Fast decision model reproducing System One using a fine-tuned Qwen3.5-2B base. Emits typed probability distributions across custom categorical choice sets in 28 ms. Achieved 71.0% macro accuracy at 30 decisions/s on S1Bench (10x faster than Jev).
+- **[`Yinsongxu/LLM2Jev`](https://github.com/Yinsongxu/LLM2Jev)** *(Python, ⭐ 145)* -- Adapts local open-weight language models into Jev-compatible structured decision engines. Exposes Choice, Score, and Noul probability outputs via prefill-only binary inference.
+- **[`daseinlabs/open-jev`](https://github.com/daseinlabs/open-jev)** *(Python, ⭐ 103)* -- One-pass option scoring on Apple Silicon via MLX. Evaluates choices in 22 ms with interactive Doom demos.
+- **[`Heman10x-NGU/Verdict-open-jev`](https://github.com/Heman10x-NGU/Verdict-open-jev)** *(Python, ⭐ 68)* -- Non-autoregressive decision engine with calibrated uncertainty (RLCD) and in-browser WebGPU playground.
+- **[`bnsd55/jevmlx`](https://github.com/bnsd55/jevmlx)** *(Python, ⭐ 59)* -- Apple Silicon MLX library generating constrained parallel decisions and schema-valid probabilities from open-weight models in 26 ms.
+- **[`ikermoel/open-alternative-jev`](https://github.com/ikermoel/open-alternative-jev)** *(Python, ⭐ 51)* -- Open alternative to Jev emitting typed, calibrated decisions from open-weights LLMs in one forward pass via Hugging Face and vLLM in 26 ms.
+- **[`zhengxuyu/litjev`](https://github.com/zhengxuyu/litjev)** *(Python, ⭐ 41)* -- Open reproduction of Jev's decision layer on open LLM backends. Exposes a drop-in `/v1/systemone` server with single-pass logit extraction in 25 ms.
+- **[`OmniJev/PlayJev`](https://github.com/OmniJev/PlayJev)** *(JavaScript, ⭐ 24)* -- 0.8 B parameter distilled fast classifier trained on Qwen3.5-0.8B weights for arcade game control and browser automation. Runs locally on consumer hardware in under 20 ms.
   <details open id="demo-omnijev-playjev">
   <summary><img src="media/omnijev-playjev-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Arcade Benchmark</b> <i>(Click to pop out full size)</i></summary>
   <p align="center">
@@ -612,10 +643,10 @@ This project maintains two distinct, interconnected resources for developers and
   </p>
   </details>
 - **[`olanotolu/jevbetter`](https://github.com/olanotolu/jevbetter)** *(Python, ⭐ 14)* -- Advanced one-pass scorer over variable-length text options using hashed n-gram encoders and rival-aware attention in 20 ms.
-- **[`kikoncuo/jevfire`](https://github.com/kikoncuo/jevfire)** *(JavaScript, ⭐ 10)* -- JEV-inspired parallel decisions for CUDA LLMs via vLLM API. Evaluates multiple decisions in one context in 18 ms.
-- **[`zhangcy122/OpenJev`](https://github.com/zhangcy122/OpenJev)** *(Python, ⭐ 10)* -- Open-source alternative to TypeSafe Jev providing typed probabilistic decisions from open-weights models in a single 24 ms forward pass.
+- **[`kikoncuo/jevfire`](https://github.com/kikoncuo/jevfire)** *(JavaScript, ⭐ 40)* -- JEV-inspired parallel decisions for CUDA LLMs via vLLM API. Evaluates multiple decisions in one context in 18 ms.
+- **[`zhangcy122/OpenJev`](https://github.com/zhangcy122/OpenJev)** *(Python, ⭐ 22)* -- Open-source alternative to TypeSafe Jev providing typed probabilistic decisions from open-weights models in a single 24 ms forward pass.
 - **[`mateolafalce/system-one-model`](https://github.com/mateolafalce/system-one-model)** *(Python, ⭐ 1)* -- Open-weights System One architecture and fine-tuning pipeline on Hugging Face.
-- **[`franckverrot/lev`](https://github.com/franckverrot/lev)** *(Python)* &middot; [🐦 Thread](https://x.com/franckverrot/status/2101896265718198757) -- Open reproduction of Jev primitives built on Liquid AI's LFM-2.5 foundation architecture. Powers ultra-compact [350 M parameter](https://huggingface.co/franckverrot/lev-350m) edge deployments for rapid zero-shot choice selection in sub-20 ms.
+- **[`franckverrot/lev`](https://github.com/franckverrot/lev)** *(Python, ⭐ 1)* &middot; [🐦 Thread](https://x.com/franckverrot/status/2101896265718198757) -- Open reproduction of Jev primitives built on Liquid AI's LFM-2.5 foundation architecture. Powers ultra-compact [350 M parameter](https://huggingface.co/franckverrot/lev-350m) edge deployments for rapid zero-shot choice selection in sub-20 ms.
 - **[`YannQi/Reflex-4B`](https://huggingface.co/YannQi/R-4B)** *(Python)* -- Distilled 4 B parameter open-weights decision model optimized for rapid single-pass option scoring. Achieves 72.0% macro accuracy at 10 decisions/s on S1Bench, delivering 2--3x higher throughput than Jev.
 - **[`maisa-ai/djev`](https://djev.dev)** *(TypeScript)* -- Fast structured decision engine powered by Maisa. Evaluates text, JSON, and images into typed yes/no answers, options, and rubric scores. Ranked #1 balanced Jev alternative on S1Bench with slightly faster speed than Jev at an acceptable accuracy tradeoff.
 - **[`Doccy/Solomon-27B`](https://x.com/4rcherhume/status/2101888238357237798)** *(Python)* &middot; [🐦 Thread](https://x.com/4rcherhume/status/2101888238357237798) -- Open-weight alternative to Jev by [Archer Hume](https://x.com/4rcherhume/status/2101888238357237798) and [Doccy healthcare](https://x.com/4rcherhume/status/2101888238357237798) based on Qwen3.8 [27b](https://x.com/4rcherhume/status/2101888238357237798). Features native multimodal evaluation, a [265k context window](https://x.com/4rcherhume/status/2101888238357237798), multi-choice tagging, and evidence pointer spans.
@@ -628,30 +659,41 @@ This project maintains two distinct, interconnected resources for developers and
   </a>
   </p>
   </details>
+- **[`taeold/djev-run`](https://github.com/taeold/djev-run)** *(Python, Shell, ⭐ 137)* &middot; [🐦 Thread](https://x.com/googlegemma/status/2102536894169096357) -- Serverless Google Cloud Run deployment for DiffusionGemma-Jev (`djev`). Spins up a Jev API-compatible inference endpoint on an NVIDIA L4 GPU via a single `gcloud run` command in 35--60 ms single-step latency, scaling to $0 when idle.
+  <details open id="demo-taeold-djev-run">
+  <summary><img src="media/taeold-djev-run-thumb.webp" height="20" width="40" align="absmiddle" alt="preview thumbnail"> 🎬 <b>View Cloud Run Demo</b> <i>(Click to pop out full size)</i></summary>
+  <p align="center">
+  <a href="https://x.com/googlegemma/status/2102536894169096357" target="_blank" rel="noopener noreferrer">
+  <img src="media/taeold-djev-run.webp" alt="DiffusionGemma-Jev on Google Cloud Run Deployment Demo" width="680"><br>
+  <small>🐦 <b>View original demonstration and discussion on X &rarr;</b></small>
+  </a>
+  </p>
+  </details>
 
 ### 9. Official SDKs and Gateway Integrations
 
-- **[`typesafe-ai/system-one-adapter-python`](https://github.com/typesafe-ai/system-one-adapter-python)** *(Python, ⭐ 229)* &middot; [🐦 Thread](https://x.com/CompleteSkeptic/status/2099925687465570372) -- Official drop-in adapter backed by frontier LLM APIs. Allows developers to simulate and benchmark Jev System One interfaces against traditional chat models.
-- **[`typesafe-ai/typesafe-sdk-js`](https://github.com/typesafe-ai/typesafe-sdk-js)** *(TypeScript, ⭐ 206)* &middot; [🐦 Thread](https://x.com/CompleteSkeptic/status/2099925687465570372) -- Official TypeScript and JavaScript client library (`npm install @typesafe-ai/sdk`) operating in 30--50 ms median latency.
-- **[`typesafe-ai/typesafe-sdk-python`](https://github.com/typesafe-ai/typesafe-sdk-python)** *(Python, ⭐ 179)* &middot; [🐦 Thread](https://x.com/CompleteSkeptic/status/2099925687465570372) -- Official Python client library for TypeSafe AI (`pip install typesafe-sdk`) executing in 30--50 ms.
-- **[`obie/ruby_decision_model`](https://github.com/obie/ruby_decision_model)** *(Ruby, ⭐ 48)* -- Ruby client library providing typed interfaces, retry backoff, and evaluation wrappers for TypeSafe Jev.
-- **[`dannote/jev`](https://github.com/dannote/jev)** *(Elixir, ⭐ 26)* -- Hex package integrating TypeSafe Jev with Elixir OTP. Implements Jev as a GenServer peer for asynchronous pattern-matched message handling.
-- **[`kieranklaassen/ruby_llm-typesafe`](https://github.com/kieranklaassen/ruby_llm-typesafe)** *(Ruby, ⭐ 18)* -- TypeSafe structured-output provider for RubyLLM 2, enabling typed probability scoring in Rails applications.
+- **[`typesafe-ai/system-one-adapter-python`](https://github.com/typesafe-ai/system-one-adapter-python)** *(Python, ⭐ 268)* &middot; [🐦 Thread](https://x.com/CompleteSkeptic/status/2099925687465570372) -- Official drop-in adapter backed by frontier LLM APIs. Allows developers to simulate and benchmark Jev System One interfaces against traditional chat models.
+- **[`typesafe-ai/typesafe-sdk-js`](https://github.com/typesafe-ai/typesafe-sdk-js)** *(TypeScript, ⭐ 226)* &middot; [🐦 Thread](https://x.com/CompleteSkeptic/status/2099925687465570372) -- Official TypeScript and JavaScript client library (`npm install @typesafe-ai/sdk`) operating in 30--50 ms median latency.
+- **[`typesafe-ai/typesafe-sdk-python`](https://github.com/typesafe-ai/typesafe-sdk-python)** *(Python, ⭐ 205)* &middot; [🐦 Thread](https://x.com/CompleteSkeptic/status/2099925687465570372) -- Official Python client library for TypeSafe AI (`pip install typesafe-sdk`) executing in 30--50 ms.
+- **[`wiatrM/jevtpp`](https://github.com/wiatrM/jevtpp)** *(C++, ⭐ 313)* -- C++20 library for typed decision routing, classification, and scoring. Evaluates compile-time enum schemas via local Laya in 5.89 ms native FP32 and 10.83 ms ONNX Runtime with 0 generated tokens.
+- **[`obie/ruby_decision_model`](https://github.com/obie/ruby_decision_model)** *(Ruby, ⭐ 50)* -- Ruby client library providing typed interfaces, retry backoff, and evaluation wrappers for TypeSafe Jev.
+- **[`dannote/jev`](https://github.com/dannote/jev)** *(Elixir, ⭐ 30)* -- Hex package integrating TypeSafe Jev with Elixir OTP. Implements Jev as a GenServer peer for asynchronous pattern-matched message handling.
+- **[`kieranklaassen/ruby_llm-typesafe`](https://github.com/kieranklaassen/ruby_llm-typesafe)** *(Ruby, ⭐ 19)* -- TypeSafe structured-output provider for RubyLLM 2, enabling typed probability scoring in Rails applications.
 - **[`Twister915/typesafe-ai`](https://github.com/Twister915/typesafe-ai)** *(Rust, ⭐ 11)* -- Typed client for TypeSafe AI in Rust, providing both asynchronous and blocking backends with comprehensive question schema builders.
-- **[`ainame/swift-typesafe`](https://github.com/ainame/swift-typesafe)** *(Swift, ⭐ 10)* -- Unofficial Swift SDK for TypeSafe Jev, supporting iOS and macOS client applications with typed async/await interfaces.
+- **[`ainame/swift-typesafe`](https://github.com/ainame/swift-typesafe)** *(Swift, ⭐ 14)* -- Unofficial Swift SDK for TypeSafe Jev, supporting iOS and macOS client applications with typed async/await interfaces.
 - **[`saibimajdi/typesafeai-dotnet-sdk`](https://github.com/saibimajdi/typesafeai-dotnet-sdk)** *(C#, ⭐ 6)* -- Community .NET / C# SDK for the TypeSafe AI System One API supporting typed noul, choice, and score queries.
 - **[`nshkrdotcom/typesafe_sdk`](https://github.com/nshkrdotcom/typesafe_sdk)** *(Elixir, ⭐ 5)* -- Idiomatic, type-safe Elixir client for TypeSafe Jev, supporting concurrent request pooling.
 - **[`joshmn/typesafe-sdk`](https://github.com/joshmn/typesafe-sdk)** *(Ruby, ⭐ 6)* -- Community Ruby 3.1+ client library providing typed questions, retry backoff, and model introspection.
-- **[`Stumble/jev-go`](https://github.com/Stumble/jev-go)** *(Go, ⭐ 3)* -- Alternative Go client for TypeSafe Jev featuring retry policies and typed schema parsing.
+- **[`Stumble/jev-go`](https://github.com/Stumble/jev-go)** *(Go, ⭐ 5)* -- Alternative Go client for TypeSafe Jev featuring retry policies and typed schema parsing.
 - **[`jamesward/zio-typesafe-ai`](https://github.com/jamesward/zio-typesafe-ai)** *(Scala, ⭐ 3)* -- Scala 3 and ZIO client library for TypeSafe AI. Provides idiomatic functional programming wrappers for System One endpoints.
-- **[`gilljon/typesafe-ai-rs`](https://github.com/gilljon/typesafe-ai-rs)** *(Rust, ⭐ 4)* -- Asynchronous Rust SDK for TypeSafe Jev with connection pooling and typed result decoding.
+- **[`gilljon/typesafe-ai-rs`](https://github.com/gilljon/typesafe-ai-rs)** *(Rust, ⭐ 5)* -- Asynchronous Rust SDK for TypeSafe Jev with connection pooling and typed result decoding.
 - **[`Gaurav-Gosain/jev-go`](https://github.com/Gaurav-Gosain/jev-go)** *(Go, ⭐ 3)* -- Lightweight, dependency-free Go client for TypeSafe Jev with native support for Vercel AI Gateway routing.
 - **[`Butochnikov/laravel-typesafe-jev`](https://github.com/Butochnikov/laravel-typesafe-jev)** *(PHP, ⭐ 2)* -- Laravel 12 and 13 framework integration with typed responses and async request pools.
 - **[`AboveColin/jevclient`](https://github.com/AboveColin/jevclient)** *(Python, ⭐ 2)* -- Asynchronous Python client for TypeSafe Jev with connection pooling and typed schema deserialization.
 - **[`OpenRouter Jev Endpoint`](https://x.com/OpenRouter/status/2100744709589316009)** *(TypeScript)* &middot; [🐦 Thread](https://x.com/OpenRouter/status/2100744709589316009) -- Serverless Jev endpoint availability on OpenRouter for unified multi-provider billing.
 - **[`Cloudflare AI Gateway Integration`](https://x.com/CloudflareDev/status/2100688880798159254)** *(TypeScript)* &middot; [🐦 Thread](https://x.com/CloudflareDev/status/2100688880798159254) -- Official support for routing and caching TypeSafe Jev requests through Cloudflare AI Gateway.
-- **[`dfa1/typesafe-java`](https://github.com/dfa1/typesafe-java)** *(Java)* -- Modular [JDK 21+](https://github.com/dfa1/typesafe-java) client library for TypeSafe System One endpoints. Includes a dedicated hermetic testkit module for mocking and unit testing application callers.
-- **[`mrmps/classifier-dev`](https://github.com/mrmps/classifier-dev)** *(TypeScript, ⭐ 402)* -- Hosted zero-shot classification service and standalone CLI (`npm i -g classifier-dev`) powered by TypeSafe Jev. Features sub-30 ms logit evaluation, multi-input batching up to 1,000 texts, IP rate limiting via Cloudflare Durable Objects, and smart-tier escalation to reasoning models when confidence falls below 0.70.
+- **[`dfa1/typesafe-java`](https://github.com/dfa1/typesafe-java)** *(Java, ⭐ 0)* -- Modular [JDK 21+](https://github.com/dfa1/typesafe-java) client library for TypeSafe System One endpoints. Includes a dedicated hermetic testkit module for mocking and unit testing application callers.
+- **[`mrmps/classifier-dev`](https://github.com/mrmps/classifier-dev)** *(TypeScript, ⭐ 411)* -- Hosted zero-shot classification service and standalone CLI (`npm i -g classifier-dev`) powered by TypeSafe Jev. Features sub-30 ms logit evaluation, multi-input batching up to 1,000 texts, IP rate limiting via Cloudflare Durable Objects, and smart-tier escalation to reasoning models when confidence falls below 0.70.
 
 ---
 
@@ -863,8 +905,8 @@ Click any preview card to watch the original video, interactive demo, or code re
 | <span id="demo-nailthy62-drape-jev"></span>**👗 Realtime Virtual Try-On Hauls (Drape).**<br>`Category 6: Real-Time E-Commerce`<br>**Creator:** [Nailthy Tang (@nailthy62)](https://x.com/nailthy62/status/2101388186916454439).<br>Interactive virtual try-on parsing live speech transcripts and outfit metadata. Selects items in real time at $0.0011 per decision cycle. | <span id="demo-matthewsoldit-camoufox-jev"></span>**🦊 Headless Camoufox Anti-Bot Automation.**<br>`Category 1: Browser Automation`<br>**Creator:** [matthewsoldit](https://x.com/matthewsoldit/status/2100702040938934493).<br>Combining headless Camoufox browser DOM extractions with Jev choice primitives for structured web scraping without heavy vision models. | <span id="demo-pavelsich-dreamchat"></span>**🛡️ Production Ambiguity Gating in DreamChat.**<br>`Category 5: Security & Ambiguity Gating`<br>**Creator:** [Pavel Sich (@sichy)](https://x.com/sichy/status/2100519334716092885).<br>When prompt ambiguity yields only 34% confidence, Jev intercepts execution to trigger interactive menus rather than burning expensive image credits. |
 | <a href="https://x.com/sep_is_heim/status/2101603192664740330" target="_blank" rel="noopener noreferrer"><img src="media/kamimoto-minimax-h3-preview.gif" alt="MiniMax H3 Video Acceleration"></a> | <a href="https://x.com/rronak_/status/2101544156757950697" target="_blank" rel="noopener noreferrer"><img src="media/ronak-minecraft-agent.webp" alt="Minecraft Autonomous Speedrun"></a> | <a href="https://x.com/neural_avb/status/2100560729401426247" target="_blank" rel="noopener noreferrer"><img src="media/avb-livestream-demo.webp" alt="One-Hour Live Coding Video Teardown"></a> |
 | <span id="demo-kamimoto-minimax-h3"></span>**⚡ MiniMax H3 Video Generation (J-GAS).**<br>`Category 6: Video Generation & Acceleration`<br>**Creator:** [Kamimoto (@sep_is_heim)](https://x.com/sep_is_heim/status/2101603192664740330).<br>Dynamic attention sparsification across 50 DiT layers. Cuts RTX 4070 generation time from 6 m 07 s to 3 m 34 s (41.7% speedup) for $0.0392 across 20--30 videos (~$0.0015/video). | <span id="demo-rmalde-minecraft-agent"></span>**🐉 Minecraft Autonomous Ender Dragon Speedrun.**<br>`Category 6: Simulation & Gaming`<br>**Creator:** [Ronak Malde (@rronak_)](https://x.com/rronak_/status/2101544156757950697).<br>Dual-system autonomous agent pairing GPT-6 Astra planning with Jev real-time physical actions. Defeats Ender Dragon in 8 m 43 s for under $1.00 total. | <span id="demo-neural-avb-livestream"></span>**💻 One-Hour Live Coding Video Teardown.**<br>`Category 2: Developer Tooling`<br>**Creator:** [AVB (@neural_avb)](https://x.com/neural_avb/status/2100560729401426247).<br>Deep live coding session demonstrating reactive workflows, multi-choice classification outputs, and integrating Jev endpoints into production stacks. |
-| <a href="https://x.com/Bk23544/status/2102021494112981347" target="_blank" rel="noopener noreferrer"><img src="media/bilal-khan-grassworks-director.webp" alt="Three.js Grassworks AI Scene Director"></a> | <a href="https://x.com/Austin_Way/status/2102131624921968704" target="_blank" rel="noopener noreferrer"><img src="media/austin-way-working-memory-video.webp" alt="Cognitive Working Memory Jev Analyzer"></a> | |
-| <span id="demo-bk23544-grassworks-director"></span>**🌱 Real-Time Three.js Scene Director.**<br>`Category 6: Simulation & Gaming`<br>**Creator:** [Bilal Khan (@Bk23544)](https://x.com/Bk23544/status/2102021494112981347).<br>Evaluates natural language directives into shader uniforms and environmental wind vectors in sub-40 ms at 60 FPS without autoregressive lag. | <span id="demo-austin-way-working-memory"></span>**🧠 Cognitive Working Memory Load Analyzer.**<br>`Category 2: AI Dev & Content Validation`<br>**Creator:** [Austin Way (@Austin_Way)](https://x.com/Austin_Way/status/2102131624921968704).<br>Evaluates learner working-memory cognitive load in instructional passages. Slashes content validation costs from ~$250,000 to ~$2,000 (125x reduction) vs frontier LLMs. | |
+| <a href="https://x.com/Bk23544/status/2102021494112981347" target="_blank" rel="noopener noreferrer"><img src="media/bilal-khan-grassworks-director.webp" alt="Three.js Grassworks AI Scene Director"></a> | <a href="https://x.com/Austin_Way/status/2102131624921968704" target="_blank" rel="noopener noreferrer"><img src="media/austin-way-working-memory-video.webp" alt="Cognitive Working Memory Jev Analyzer"></a> | <a href="https://x.com/googlegemma/status/2102536894169096357" target="_blank" rel="noopener noreferrer"><img src="media/taeold-djev-run.webp" alt="DiffusionGemma-Jev on Google Cloud Run"></a> |
+| <span id="demo-bk23544-grassworks-director"></span>**🌱 Real-Time Three.js Scene Director.**<br>`Category 6: Simulation & Gaming`<br>**Creator:** [Bilal Khan (@Bk23544)](https://x.com/Bk23544/status/2102021494112981347).<br>Evaluates natural language directives into shader uniforms and environmental wind vectors in sub-40 ms at 60 FPS without autoregressive lag. | <span id="demo-austin-way-working-memory"></span>**🧠 Cognitive Working Memory Load Analyzer.**<br>`Category 2: AI Dev & Content Validation`<br>**Creator:** [Austin Way (@Austin_Way)](https://x.com/Austin_Way/status/2102131624921968704).<br>Evaluates learner working-memory cognitive load in instructional passages. Slashes content validation costs from ~$250,000 to ~$2,000 (125x reduction) vs frontier LLMs. | <span id="demo-taeold-djev-run"></span>**☁️ Serverless DiffusionGemma-Jev on Cloud Run.**<br>`Category 8: Competing Fast Classifiers & Local Weights`<br>**Creator:** [Taehoon Lee (@googlegemma)](https://x.com/googlegemma/status/2102536894169096357).<br>Serverless deployment of DiffusionGemma-Jev on Google Cloud Run with NVIDIA L4 GPU. Delivers 35--60 ms single-step latency, scaling to $0 when idle. |
 
 ---
 
@@ -881,8 +923,8 @@ Side-by-side visual evidence from empirical benchmark suites, open-weight reprod
 | <span id="demo-omnijev-playjev"></span>**🕹️ PlayJev 10-Game Arcade Benchmark.**<br>`Category 8: Distilled Fast Classifiers`<br>**Creator:** [OmniJev](https://github.com/OmniJev/PlayJev).<br>Benchmark of 0.8 B parameter distilled decision model across 10 games. Reaches 1.00 score parity on Space Invaders, Racer, and Sokoban in under 20 ms. | <span id="demo-phuryn-experiments"></span>**📑 50-Edge-Case Adversarial Invoice Benchmark.**<br>`Category 7: Adversarial Benchmarks`<br>**Creator:** [Paweł Huryn](https://github.com/phuryn/experiments).<br>50 adversarial invoices across 6 models. Jev achieved 50/50 accuracy for $0.025 / 1k calls, outperforming Opus 5 (49/50, $2.83) and Ministral 8 B with zero syntax failures. | <span id="demo-typesafe-throughput-benchmark"></span>**⚡ TypeSafe Throughput & Concurrency.**<br>`Category 7: Concurrency & Throughput`<br>**Creator:** [TypeSafe AI Official](https://typesafe.ai).<br>Empirical evaluation of parallel multi-schema inference across 10,000 requests. Shows consistent 30--50 ms latencies regardless of declared schema volume. |
 | <a href="https://benchmarkheaven.com/jev-models" target="_blank" rel="noopener noreferrer"><img src="media/benchmarkheaven-jevbench-leaderboard.webp" alt="Benchmark Heaven JevBench Leaderboard"></a> | <a href="https://x.com/tdinh_me/status/2101958041986068848" target="_blank" rel="noopener noreferrer"><img src="media/tony-dinh-tetris-harness-illusion.webp" alt="Tony Dinh Tetris Reality Check"></a> | <a href="http://bench.jakecuth.com" target="_blank" rel="noopener noreferrer"><img src="media/s1bench-cuth-benchmark.webp" alt="S1Bench Decisions/s vs Accuracy"></a> |
 | <span id="demo-benchmarkheaven-jevbench"></span>**🏆 JevBench v1.2: 42 Decision Systems.**<br>`Category 7: Independent Benchmarks`<br>**Creator:** [Benchmark Heaven](https://benchmarkheaven.com/jev-models).<br>Comprehensive multi-axis benchmark (Intelligence, Calibration, Speed, Cost, 25% each). Jev 1.13.0 ranks #1 (75.4), SemIf Qwen3.5-4 B ranks #2 (74.7), djev Maisa ranks #3 (74.3). | <span id="demo-tdinh-tetris-harness"></span>**🕹️ Tetris Reality Check & Planning Limits.**<br>`Category 7: Adversarial Post-Mortems`<br>**Creator:** [Tony Dinh (@tdinh_me)](https://x.com/tdinh_me/status/2101958041986068848).<br>Empirical benchmark proving that stripping candidate pre-filtering causes Jev to top out in 3 seconds. Demonstrates why System 1 reflex models require deterministic search scaffolds. | <span id="demo-cuth-s1bench"></span>**🔬 S1Bench: 30+ Open Rebuilds on DGX Spark.**<br>`Category 7: Open-Weight Benchmarks`<br>**Creator:** [Jake Cuth (@ItsCuthulhu)](https://x.com/ItsCuthulhu/status/2101491913866055821).<br>Pareto frontier across 1,999 decisions: Jev 77.5% at 2.4 decisions/s. Open encoders reach 37 decisions/s, while large 27 B models reach 75.8% at 1.6 decisions/s. |
-| <a href="https://x.com/airesearch12/status/2101936404385161270" target="_blank" rel="noopener noreferrer"><img src="media/jevbench-alternative-systems-graph.webp" alt="JevBench Alternative Systems Graph"></a> | | |
-| <span id="demo-airesearch12-jevbench-alternatives"></span>**📈 JevBench v1.2.7: 26 Alternative Systems.**<br>`Category 7: Independent Benchmarks`<br>**Creator:** [Florian S (@airesearch12)](https://x.com/airesearch12/status/2101936404385161270).<br>Composite evaluation (Intelligence, Calibration, Speed, Cost, 25% each). TypeSafe Jev leads at #1 (75.4), SemIf #2 (74.7), djev #3 (74.3), Verdict 1.4 #4 (72.5), GLiNER2 (53.0). | | |
+| <a href="https://x.com/airesearch12/status/2101936404385161270" target="_blank" rel="noopener noreferrer"><img src="media/jevbench-alternative-systems-graph.webp" alt="JevBench Alternative Systems Graph"></a> | <a href="https://x.com/fastinoAI/status/2103188985292157353" target="_blank" rel="noopener noreferrer"><img src="media/fastino-gliner2-5-decide-benchmark.webp" alt="Fastino Labs GLiNER2.5-Decide Fast Decisions Benchmark"></a> | |
+| <span id="demo-airesearch12-jevbench-alternatives"></span>**📈 JevBench v1.2.7: 26 Alternative Systems.**<br>`Category 7: Independent Benchmarks`<br>**Creator:** [Florian S (@airesearch12)](https://x.com/airesearch12/status/2101936404385161270).<br>Composite evaluation (Intelligence, Calibration, Speed, Cost, 25% each). TypeSafe Jev leads at #1 (75.4), SemIf #2 (74.7), djev #3 (74.3), Verdict 1.4 #4 (72.5), GLiNER2 (53.0). | <span id="demo-fastino-gliner2-5-decide-bench"></span>**🎯 Fast Decisions: GLiNER2.5-Decide.**<br>`Category 8: Open-Weight Benchmarks`<br>**Creator:** [Fastino Labs (@fastinoAI)](https://x.com/fastinoAI/status/2103188985292157353).<br>17-dataset classification suite across triage, routing, and intent. The 340 M encoder scores 60.1% accuracy on the [benchmark suite](https://huggingface.co/datasets/fastino/fast-decisions), leading JevK5 (57.5%), SemIf (56.4%), and Laya (46.6%) with 11x fewer parameters. | |
 
 ---
 
@@ -915,6 +957,7 @@ Engineering teardowns, interactive prototypes, and public technical debates publ
 - **[Gregor Zunic on Google Flights DOM Automation](https://x.com/gregpr07/status/2100411066966749359)** -- Zurich to London flight booking in 7.1 s for $0.0039 total vs Opus 5 bare screenshot at $0.40 to $0.90 per 12-step task (130x to 300x cheaper).
 - **[SuperX on Viral Copy Scoring](https://superx.so/tweet-tester)** -- Evaluated 10,000 combinatorial copy iterations for $0.08 with Jev vs $12.50 on GPT-4o Mini or $45.00 on Claude 3.5 Haiku.
 - **[Sahibzada Allahyar on GLiNER as Open Fast Classifier](https://x.com/singularity_sah/status/2101450114246000706)** -- Fastino AI and Cambridge researcher analysis of bidirectional encoders. Argues GLiNER and GLiFormer provide open zero-shot classification and extraction without autoregressive decoding overhead.
+- **[Fastino Labs on GLiNER2.5-Decide Launch](https://x.com/fastinoAI/status/2103188985292157353)** -- Fastino Labs release of the 340 M parameter open-weight decision model for constrained classification and joint schema decoding. Achieves 60.1% accuracy across 17 datasets in the [Fast Decisions suite](https://huggingface.co/datasets/fastino/fast-decisions), outperforming 4 B decoder readouts including JevK5 and SemIf in 38--47 ms GPU latency with zero generated tokens.
 - **[Steve Krouse on 16-Judgment Demos on Val Town](https://x.com/stevekrouse/status/2100287368221659289)** -- Playable browser demonstration executing 16 concurrent schema evaluations in a single pass.
 - **[Marcel Pociot on Social Feed Noise Collapsing](https://x.com/marcelpociot/status/2100520134481735729)** -- Browser extension prototype evaluating social media post quality to collapse rage-bait and spam in real time.
 - **[Wayne Sutton on 1-Million Question Interactive Benchmarks](https://x.com/waynesutton/status/2100487878992388279)** -- Convex-backed public interactive web application testing high-throughput concurrent Jev queries.
